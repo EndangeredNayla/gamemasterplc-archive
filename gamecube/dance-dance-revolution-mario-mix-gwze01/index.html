@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+            (function() {
+                function e(g) {
+                    this.t = {};
+                    this.tick = function(h, k, f) {
+                        this.t[h] = [void 0 != f ? f : (new Date).getTime(), k];
+                        if (void 0 == f) try {
+                            window.console.timeStamp("CSI/" + h)
+                        } catch (m) {}
+                    };
+                    this.getStartTickTime = function() {
+                        return this.t.start[0]
+                    };
+                    this.tick("start", null, g)
+                }
+                var a;
+                if (window.performance) var d = (a = window.performance.timing) && a.responseStart;
+                var l = 0 < d ? new e(d) : new e;
+                window.jstiming = {
+                    Timer: e,
+                    load: l
+                };
+                if (a) {
+                    var b = a.navigationStart;
+                    0 < b && d >= b && (window.jstiming.srt = d - b)
+                }
+                if (a) {
+                    var c = window.jstiming.load;
+                    0 < b && d >=
+                        b && (c.tick("_wtsrt", void 0, b), c.tick("wtsrt_", "_wtsrt", d), c.tick("tbsd_", "wtsrt_"))
+                }
+                try {
+                    a = null, window.chrome && window.chrome.csi && (a = Math.floor(window.chrome.csi().pageT), c && 0 < b && (c.tick("_tbnd", void 0, window.chrome.csi().startE), c.tick("tbnd_", "_tbnd", b))), null == a && window.gtbExternal && (a = window.gtbExternal.pageT()), null == a && window.external && (a = window.external.pageT, c && 0 < b && (c.tick("_tbnd", void 0, window.external.startE), c.tick("tbnd_", "_tbnd", b))), a && (window.jstiming.pt = a)
+                } catch (g) {}
+            })();
+        })()
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="//www.google.com/images/icons/product/sites-16.ico" />
+    <link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/613cd8/system/app/images/apple-touch-icon.png" type="image/png" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            function d(a) {
+                return document.getElementById(a)
+            }
+            window.byId = d;
+
+            function g(a) {
+                return a.replace(/^\s+|\s+$/g, "")
+            }
+            window.trim = g;
+            var h = [],
+                k = 0;
+            window.JOT_addListener = function(a, b, c) {
+                var f = new String(k++);
+                a = {
+                    eventName: a,
+                    handler: b,
+                    compId: c,
+                    key: f
+                };
+                h.push(a);
+                return f
+            };
+            window.JOT_removeListenerByKey = function(a) {
+                for (var b = 0; b < h.length; b++)
+                    if (h[b].key == a) {
+                        h.splice(b, 1);
+                        break
+                    }
+            };
+            window.JOT_removeAllListenersForName = function(a) {
+                for (var b = 0; b < h.length; b++) h[b].eventName == a && h.splice(b, 1)
+            };
+            window.JOT_postEvent = function(a, b, c) {
+                var f = {
+                    eventName: a,
+                    eventSrc: b || {},
+                    payload: c || {}
+                };
+                if (window.JOT_fullyLoaded)
+                    for (b = h.length, c = 0; c < b && c < h.length; c++) {
+                        var e = h[c];
+                        e && e.eventName == a && (f.listenerCompId = e.compId || "", (e = "function" == typeof e.handler ? e.handler : window[e.handler]) && e(f))
+                    } else window.JOT_delayedEvents.push({
+                        eventName: a,
+                        eventSrc: b,
+                        payload: c
+                    })
+            };
+            window.JOT_delayedEvents = [];
+            window.JOT_fullyLoaded = !1;
+            window.JOT_formatRelativeToNow = function(a, b) {
+                a = ((new Date).getTime() - a) / 6E4;
+                if (1440 <= a || 0 > a) return null;
+                var c = 0;
+                60 <= a && (a /= 60, c = 2);
+                2 <= a && c++;
+                return b ? window.JOT_siteRelTimeStrs[c].replace("__duration__", Math.floor(a)) : window.JOT_userRelTimeStrs[c].replace("__duration__", Math.floor(a))
+            };
+        })()
+    </script>
+    <script>
+        var breadcrumbs = [{
+            "path": "/gamecube",
+            "deleted": false,
+            "title": "Nintendo GameCube",
+            "dir": "ltr"
+        }, {
+            "path": "/gamecube/dance-dance-revolution-mario-mix-gwze01",
+            "deleted": false,
+            "title": "Dance Dance Revolution Mario Mix (GWZE01)",
+            "dir": "ltr"
+        }];
+        var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/613cd8/system/app/images/cleardot.gif';
+
+
+        var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+
+
+
+
+
+
+        var webspace = {
+            "gvizGstaticVersion": "current",
+            "enableAnalytics": false,
+            "pageSharingId": "jotspot_page",
+            "codeembeds": {
+                "outerIframeSrc": "https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html",
+                "innerIframeSrc": "https://1514640655-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"
+            },
+            "enableUniversalAnalytics": false,
+            "sharingPolicy": "OPENED",
+            "siteTitle": "gamemasterplc's cheat codes",
+            "experiments": {
+                "overrideDisableDomainEditing": false,
+                "disableDomainEditing": true
+            },
+            "jot2atari": {
+                "eligibility": "INELIGIBLE"
+            },
+            "onepickUrl": "https://docs.google.com/picker",
+            "adsensePublisherId": null,
+            "features": {
+                "moreMobileStyleImprovements": null,
+                "subscriptionDataMigrationInProgress": null,
+                "plusBadge": false
+            },
+            "configProperties": {
+                "disableSiteEditing": null
+            },
+            "isPublic": true,
+            "newSitesBaseUrl": "https://sites.google.com",
+            "isConsumer": true,
+            "serverFlags": {
+                "jot2AtariLearnMoreUrl": "https://support.google.com/sites/answer/7035197"
+            },
+            "domainAnalyticsAccountId": "",
+            "plusPageId": "",
+            "signInUrl": "https://accounts.google.com/AccountChooser?continue=https://sites.google.com/gamecube/dance-dance-revolution-mario-mix-gwze01&service=jotspot",
+            "analyticsAccountId": "",
+            "scottyUrl": "/_/upload",
+            "homePath": "/",
+            "siteNoticeUrlEnabled": null,
+            "plusPageUrl": "",
+            "adsensePromoClickedOrSiteIneligible": true,
+            "csiReportUri": "https://gg.google.com/csi",
+            "sharingId": "jotspot",
+            "termsUrl": "//www.google.com/intl/en/policies/terms/",
+            "gvizVersion": 1,
+            "editorResources": {
+                "sitelayout": ["https://ssl.gstatic.com/sites/p/613cd8/system/app/css/sitelayouteditor.css"],
+                "text": ["https://ssl.gstatic.com/sites/p/613cd8/system/js/codemirror.js", "https://ssl.gstatic.com/sites/p/613cd8/system/app/css/codemirror_css.css", "https://ssl.gstatic.com/sites/p/613cd8/system/js/trog_edit__en.js", "https://ssl.gstatic.com/sites/p/613cd8/system/app/css/trogedit.css", "/_/rsrc/1663832320000/system/app/css/editor.css", "https://ssl.gstatic.com/sites/p/613cd8/system/app/css/codeeditor.css", "/_/rsrc/1663832320000/system/app/css/camelot/editor-jfk.css"]
+            },
+            "sharingUrlPrefix": "/_/sharing",
+            "isAdsenseEnabled": true,
+            "domain": "defaultdomain",
+            "baseUri": "/",
+            "name": "gamemasterplcscheatcodes",
+            "siteTemplateId": false,
+            "siteNoticeRevision": null,
+            "siteNoticeUrlAddress": null,
+            "siteNoticeMessage": null,
+            "page": {
+                "isRtlLocale": false,
+                "canDeleteWebspace": null,
+                "isPageDraft": null,
+                "parentPath": "/gamecube",
+                "parentWuid": "wuid:gx:22da14cd8835627",
+                "siteLocale": "en",
+                "timeZone": "America/Los_Angeles",
+                "type": "text",
+                "title": "Dance Dance Revolution Mario Mix (GWZE01)",
+                "locale": "en",
+                "wuid": "wuid:gx:44db319b32e6f5a1",
+                "revision": 17,
+                "path": "/gamecube/dance-dance-revolution-mario-mix-gwze01",
+                "isSiteRtlLocale": false,
+                "pageInheritsPermissions": null,
+                "name": "dance-dance-revolution-mario-mix-gwze01",
+                "canChangePath": true,
+                "state": "",
+                "properties": {},
+                "bidiEnabled": false,
+                "currentTemplate": {
+                    "path": "/system/app/pagetemplates/text",
+                    "title": "Web Page"
+                }
+            },
+            "canPublishScriptToAnyone": true,
+            "user": {
+                "keyboardShortcuts": true,
+                "sessionIndex": "",
+                "guest_": true,
+                "displayNameOrEmail": "guest",
+                "userName": "guest",
+                "uid": "",
+                "renderMobile": false,
+                "domain": "",
+                "namespace": "",
+                "hasWriteAccess": false,
+                "namespaceUser": false,
+                "primaryEmail": "guest",
+                "hasAdminAccess": false,
+                "isGoogleAdmin": false
+            },
+            "gadgets": {
+                "baseUri": "/system/app/pages/gadgets"
+            }
+        };
+        webspace.page.breadcrumbs = breadcrumbs;
+
+
+        var JOT_siteRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+    </script>
+    <script type="text/javascript">
+        window.jstiming.load.tick('scl');
+    </script>
+    <meta name="title" content="Dance Dance Revolution Mario Mix (GWZE01) - gamemasterplc's cheat codes" />
+    <meta itemprop="name" content="Dance Dance Revolution Mario Mix (GWZE01) - gamemasterplc's cheat codes" />
+    <meta property="og:title" content="Dance Dance Revolution Mario Mix (GWZE01) - gamemasterplc's cheat codes" />
+    <meta name="description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <meta itemprop="description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <meta id="meta-tag-description" property="og:description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/613cd8/system/app/themes/default/standard-css-default-ltr-ltr.css" />
+    <link rel="stylesheet" type="text/css" href="/_/rsrc/1663832320000/system/app/css/overlay.css?cb=default150goog-ws-leftnone30themedefaultstandard" />
+    <link rel="stylesheet" type="text/css" href="/_/rsrc/1663832320000/system/app/css/camelot/allthemes-view.css" />
+    <!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+    <title>Dance Dance Revolution Mario Mix (GWZE01) - gamemasterplc's cheat codes</title>
+
+    <div class="battle-for-libaries">
+        <a href="https://www.battleforlibraries.com/" ?><b>❗</b> This site is archived by EndangeredNayla. Mirrored on April 1st 2023 from a February 2023 backup.<b>❗</b></a></a>
+    </div>
+
+    <style>
+        .battle-for-libaries {
+            background-color: #0af176;
+            overflow: hidden;
+        }
+        /* Style the links inside the navigation bar */
+        
+        .battle-for-libaries a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.jstiming.load.tick('cl');
+    </script>
+</head>
+
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+    <div id="sites-page-toolbar" class="sites-header-divider">
+        <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;">
+            <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div>
+        </div>
+    </div>
+    <div id="sites-chrome-everything-scrollbar">
+        <div id="sites-chrome-everything" class="">
+            <div id="sites-chrome-page-wrapper" style="direction: ltr">
+                <div id="sites-chrome-page-wrapper-inside">
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+                        <table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+                            <tr class="sites-header-primary-row" id="sites-chrome-userheader">
+                                <td id="sites-header-title" class="" role="banner">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <h2><a href="https://sites.google.com/" dir="ltr" id="sites-chrome-userheader-title">gamemasterplc's cheat codes</a></h2>
+                                    </div>
+                                </td>
+                                <td class="sites-layout-searchbox  ">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" />
+                                            <div id="sites-searchbox-button-set" class="goog-inline-block">
+                                                <div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+                                <td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="sites-chrome-main-wrapper">
+                        <div id="sites-chrome-main-wrapper-inside">
+                            <table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+                                <tr>
+                                    <td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation">
+                                            <div class="sites-embed-content sites-sidebar-nav">
+                                                <ul role="navigation" jotId="navList" class="has-expander">
+                                                    <li class="topLevel nav-first ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="/home" jotId="wuid:gx:6939b6521e98137f" class="sites-navigation-link topLevel">Home</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7aea457ca7351438">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/nintendo-64" jotId="wuid:gx:7aea457ca7351438" class="sites-navigation-link topLevel">Nintendo 64</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-ntsc-j" jotId="wuid:gx:19ef26b8e4e5ef0" class="sites-navigation-link">Mario Party (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party" jotId="wuid:gx:2b345c5f47fa1237" class="sites-navigation-link">Mario Party (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-pal" jotId="wuid:gx:58ff2eef094b8d3a" class="sites-navigation-link">Mario Party (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2-ntsc-j" jotId="wuid:gx:27b610996cc1efac" class="sites-navigation-link">Mario Party 2 (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2" jotId="wuid:gx:78ebd597892ebd18" class="sites-navigation-link">Mario Party 2 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2-pal" jotId="wuid:gx:20c1f2af5cd58611" class="sites-navigation-link">Mario Party 2 (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3-1" jotId="wuid:gx:2fba3a6a362fceb4" class="sites-navigation-link">Mario Party 3 (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3" jotId="wuid:gx:742074824241cf85" class="sites-navigation-link">Mario Party 3 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3-pal" jotId="wuid:gx:76fcf1032d2506e3" class="sites-navigation-link">Mario Party 3 (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/paper-mario-ntsc-u" jotId="wuid:gx:f9d89eed713fbbf" class="sites-navigation-link">Paper Mario (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/pokemon-stadium-ntsc-u" jotId="wuid:gx:c6058d4c49f82b4" class="sites-navigation-link">Pokemon Stadium (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/super-mario-64-ntsc-u" jotId="wuid:gx:66ebb0d0a24eba83" class="sites-navigation-link">Super Mario 64 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/super-smash-bros-ntsc-u" jotId="wuid:gx:6f4880385202f92f" class="sites-navigation-link">Super Smash Bros (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/the-legend-of-zelda-ocarina-of-time-1-2-ntsc" jotId="wuid:gx:5274f6b71c227bf1" class="sites-navigation-link">The Legend of Zelda Ocarina of Time (1.2 NTSC)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:66cf8369a41bf37d">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/nintendo-ds" jotId="wuid:gx:66cf8369a41bf37d" class="sites-navigation-link topLevel">Nintendo DS</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/bomberman-land-touch-ntsc-u" jotId="wuid:gx:16c69b75df743612" class="sites-navigation-link">Bomberman Land Touch (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/bomberman-land-touch-2-ntsc-u" jotId="wuid:gx:15192635b788f3f6" class="sites-navigation-link">Bomberman Land Touch 2 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-and-sonic-at-the-olympic-games-ntsc-u" jotId="wuid:gx:3f6167c1c741a57e" class="sites-navigation-link">Mario and Sonic at the Olympic Games (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-kart-ds-ntsc-u-pal" jotId="wuid:gx:16ef37efae90cba3" class="sites-navigation-link">Mario Kart DS (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-party-ds-ntsc-u" jotId="wuid:gx:1c8d8bcc328f2ce9" class="sites-navigation-link">Mario Party DS (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-party-ds-pal" jotId="wuid:gx:7d1c761efbe739e3" class="sites-navigation-link">Mario Party DS (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/sonic-rush-adventure-ntsc-u" jotId="wuid:gx:70922470b1e2aff0" class="sites-navigation-link">Sonic Rush Adventure (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/super-mario-64-ds-pal" jotId="wuid:gx:7ecc45a14274e2b7" class="sites-navigation-link">Super Mario 64 DS (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/super-monkey-ball-touch-and-roll-ntsc-u" jotId="wuid:gx:546838db19b824b7" class="sites-navigation-link">Super Monkey Ball Touch and Roll (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:22da14cd8835627">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/gamecube" jotId="wuid:gx:22da14cd8835627" class="sites-navigation-link topLevel">Nintendo GameCube</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div class="current-bg" jotId="wuid:gx:44db319b32e6f5a1" dir="ltr" style="padding-left: 38px;">Dance Dance Revolution Mario Mix (GWZE01)</div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/f-zero-gx-gfze01" jotId="wuid:gx:2438805c332037b6" class="sites-navigation-link">F-Zero GX (GFZE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/hot-wheels-world-race-ghre78" jotId="wuid:gx:22883aef70a0a172" class="sites-navigation-link">Hot Wheels World Race (GHRE78)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/kirby-air-ride-gkye01" jotId="wuid:gx:5c9e61402779433" class="sites-navigation-link">Kirby Air Ride (GKYE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-4-gmpe01" jotId="wuid:gx:2b6e743ca44e9338" class="sites-navigation-link">Mario Party 4 (GMPE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-5-gp5e01" jotId="wuid:gx:6557bee485bc4162" class="sites-navigation-link">Mario Party 5 (GP5E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-5-gp5p01" jotId="wuid:gx:3db5a57e91857288" class="sites-navigation-link">Mario Party 5 (GP5P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6-gp6e01" jotId="wuid:gx:857fbb086f598e8" class="sites-navigation-link">Mario Party 6 (GP6E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6" jotId="wuid:gx:40f3d8bc9f55e396" class="sites-navigation-link">Mario Party 6 (GP6J01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6-gp6p01" jotId="wuid:gx:41a55e46a8e1fd2b" class="sites-navigation-link">Mario Party 6 (GP6P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-7-gp7e01" jotId="wuid:gx:42f385f7e18fe398" class="sites-navigation-link">Mario Party 7 (GP7E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-7-gp7p01" jotId="wuid:gx:2206a083c8082c6c" class="sites-navigation-link">Mario Party 7 (GP7P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-power-tennis-gome01" jotId="wuid:gx:90c95477a5044c" class="sites-navigation-link">Mario Power Tennis (GOME01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/pc-genjin-gp4j18" jotId="wuid:gx:6dfe5808acaf683a" class="sites-navigation-link">PC Genjin (GP4J18)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/skies-of-arcadia-legends-ntsc-u" jotId="wuid:gx:37b0bb6de4c05cea" class="sites-navigation-link">Skies of Arcadia Legends (GEAE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-adventure-2-battle-gsne8p" jotId="wuid:gx:5a51cdc69ab67d7f" class="sites-navigation-link">Sonic Adventure 2 Battle (GSNE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-adventure-dx-director-s-cut-ntsc-u" jotId="wuid:gx:2636b44dfe06966b" class="sites-navigation-link">Sonic Adventure DX Director's Cut (GXSE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-heroes-g9se8p" jotId="wuid:gx:61f642895a4406d" class="sites-navigation-link">Sonic Heroes (G9SE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/spongebob-squarepants-battle-for-bikini-botton-gqpe78" jotId="wuid:gx:3f8290be0aea8486" class="sites-navigation-link">SpongeBob SquarePants: Battle for Bikini Bottom (GQPE78)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/super-mario-sunshine-ntsc-u" jotId="wuid:gx:77a535a32bc19e6f" class="sites-navigation-link">Super Mario Sunshine (GMSE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/tales-of-symphonia-gqseaf" jotId="wuid:gx:2604b18f4c68a1d3" class="sites-navigation-link">Tales of Symphonia (GQSEAF)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/the-legend-of-zelda-the-wind-waker-gzle01" jotId="wuid:gx:628bf33e7e6b85bf" class="sites-navigation-link">The Legend of Zelda The Wind Waker (GZLE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/wario-ware-inc-mega-party-games-gzwe01" jotId="wuid:gx:8c966e29a3c149" class="sites-navigation-link">Wario Ware Inc Mega Party Games (GZWE01)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7012bd522bd7c7ac">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/wii" jotId="wuid:gx:7012bd522bd7c7ac" class="sites-navigation-link topLevel">Nintendo Wii</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/calling-scae18" jotId="wuid:gx:192c65413923fd4b" class="sites-navigation-link">Calling (SCAE18)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-and-sonic-at-the-olympic-winter-games-role8p" jotId="wuid:gx:76bf374ca75b4bab" class="sites-navigation-link">Mario and Sonic at the Olympic Winter Games (ROLE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8e01" jotId="wuid:gx:151dbda2c6755e48" class="sites-navigation-link">Mario Party 8 (RM8E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8j01" jotId="wuid:gx:19d72b70348b1752" class="sites-navigation-link">Mario Party 8 (RM8J01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8p01" jotId="wuid:gx:1070f6de169d49c5" class="sites-navigation-link">Mario Party 8 (RM8P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-9-ssqe01" jotId="wuid:gx:26f4ce4437b95959" class="sites-navigation-link">Mario Party 9 (SSQE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-64-dlc-naae" jotId="wuid:gx:606f6d0b0104c129" class="sites-navigation-link">Super Mario 64 (DLC) (NAAE)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-galaxy-2-sb4e01" jotId="wuid:gx:222f58352403052f" class="sites-navigation-link">Super Mario Galaxy 2 (SB4E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-world-dlc-jaae" jotId="wuid:gx:37d2004609a323b" class="sites-navigation-link">Super Mario World (DLC) (JAAE)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/the-legend-of-zelda-majora-s-mask-dlc-nare" jotId="wuid:gx:3ca86aee3bd469f4" class="sites-navigation-link">The Legend of Zelda Majora's Mask (DLC) (NARE)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7dc09108fd6260e6">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/playstation-1" jotId="wuid:gx:7dc09108fd6260e6" class="sites-navigation-link topLevel">Playstation 1</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-1/bomberman-fantasy-race-ntsc-u" jotId="wuid:gx:456f06c9cf1e2a4f" class="sites-navigation-link">Bomberman Fantasy Race NTSC-U</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-1/spyro-the-dragon-ntsc-u" jotId="wuid:gx:69dfc28a4d38b2d" class="sites-navigation-link">Spyro the Dragon (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:19ed278724731e20">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/playstation-2" jotId="wuid:gx:19ed278724731e20" class="sites-navigation-link topLevel">Playstation 2</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-2/sonic-gems-collection-pal" jotId="wuid:gx:475f45f10cf34350" class="sites-navigation-link">Sonic Gems Collection (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-2/sonic-heroes-ntsc-u" jotId="wuid:gx:4340ae72ee737817" class="sites-navigation-link">Sonic Heroes (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:64600d86afe0c722" class="sites-navigation-link topLevel">Sitemap</a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="sites-canvas-wrapper">
+                                        <div id="sites-canvas" role="main">
+                                            <div id="goog-ws-editor-toolbar-container"> </div>
+                                            <div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+                                                <A href="/gamecube" dir="ltr">Nintendo GameCube</A>‎ &gt; ‎
+                                            </div>
+                                            <h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+                                                <span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Dance Dance Revolution Mario Mix (GWZE01)</span>
+                                            </h3>
+                                            <div id="sites-canvas-main" class="sites-canvas-main">
+                                                <div id="sites-canvas-main-content">
+                                                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="sites-layout-tile sites-tile-name-content-1">
+                                                                    <div dir="ltr">
+                                                                        <div><span style="font-family:courier new,monospace">Speedrun Timer</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">04102174 25303264<br />04102178 3A253032<br />0410217C 643A2530<br />04102180 32640000<br />C2005AB0 00000014<br />380000FF 900D0000<br />386001CC 388001A4<br />38A000A5 38C00019<br />38ED0000 3D008000<br />6108C170 7D0903A6<br />4E800421 806D845C<br />3C800003 60844BC0<br />7CC323D6 2C060063<br />41800008 38C00063<br />38800E10 38A0003C<br />7CE323D6 7D082BD6<br />1D08003C 7CE83850<br />7D032BD6 7D282BD6<br />1D29003C 7D094050<br />386001CC 388001A4<br />C02285E8 3CA08010<br />60A52174 3D208000<br />6129C014 7D2903A6<br />4E800421 38600001<br />60000000 00000000<br />2819412A EFEF1010<br />041940DC 00000000<br />E2000001 80008000</span><br
+                                                                            /><span style="font-family:courier new,monospace"><font face="courier new, monospace"><span style="font-family:courier new,monospace">Displayed in lower right
+ as HH:MM:SS. HH is hours. MM is minutes. SS is seconds. Press Start and Z at the same time to reset the timer.</span></font>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace"><font face="courier new, monospace"><span style="font-family:courier new,monospace"><br /></span></font>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace">Widescreen<br />041956FC 441B4000<br />04194DF8 44555555<br />04194E98 44400000<br />040493E0 C0828118<br />040F052C C0828118<br />C2084FF8 00000005<br />3C803B2A 6084AAAB<br />80030000 7C040000<br />4082000C 3C00BF40<br />9003000C C003000C<br />60000000 00000000<br />C206F52C 00000003<br />93E10024 3FE03FAB<br />93E30000 C0A30000<br />EFA50772 00000000<br />C206F2A4 00000003<br />3FE03FAB 93E30000<br />C0030000 EF6000B2<br />60000000 00000000<br />0400D060 2C000356<br />2035CE80 40000000<br />0435CE7C 402AAAAB<br />E2000001 80008000<br />2035ED04 40000000<br />0435ED00 402AAAAB<br />E2000001 80008000<br />2035EFDC 43900000<br />0435EFE8 3FAAAAAB<br />E2000001 80008000<br />2035CEFC 40000000<br />0435CEF8 402AAAAB<br />E2000001 80008000<br />041962D4 C2B40000<br />04196170 47FFFFFF<br />C2011384 00000004<br />3C804310 80BF0020<br />7C042800 4082000C<br />3C8047FF 909F0020<br />C03F0020 00000000<br />48000000 800030C8<br />DE000000 80008180<br />30012A2C 00000000<br />14012A28 40831800<br />14012A20 4404C000<br />14012A14 43F08000<br />E0000000 80008000<br />48000000 800030C8<br />DE000000 80008180<br />30012BCC 00000000<br />14012BBC 44060000<br />14012BB0 43F30000<br />14012BC0 4082A000<br />E0000000 80008000<br />48000000 800030C8<br />DE000000 80008180<br />30011E94 00000000<br />14011E88 4082A000<br />14011E80 44060000<br />14011E74 43F30000<br />E0000000 80008000<br />203C5DE0 3FE66666<br />043C5DD0 40528000<br />043C5DC4 C2100000<br />043C5DCC 41600000<br />043C5DF8 441B4000<br />043C5E10 40550000<br />E2000001 80008000<br />48000000 800030C8<br />DE000000 80008180<br />300130FC 00000000<br />14013110 402C0000<br />140130F8 40410000<br />140130F0 404B0000<br />140130E0 40500000<br />14013104 C2100000<br />E0000000 80008000<br />203C53F8 407A8000<br />043C53F0 00000000<br />043C5400 40608000<br />043C52E4 42800000<br />E2000001 80008000<br />48000000 800030C8<br />DE000000 80008180<br />30012318 00000000<br />140122D0 40608000<br />140122B8 00000000<br />14012150 C2800000<br />14012158 42800000<br />E0000000 80008000<br />48000000 800030C8<br />DE000000 80008180<br />3001270C 00000000<br />140126F0 BFF00000<br />14012700 405F0000<br />14012670 C2980000<br />14012678 42800000<br />E0000000 80008000<br />2039EA3C 48000070<br />C239E990 00000002<br />1C720004 38800003<br />7C6327D6 00000000<br />C239E9F0 00000002<br />1C720004 38800003<br />7C6327D6 00000000<br />E2000001 80008000<br />2039D370 4180FE64<br />C239D294 00000003<br />C021000C 3C8042C0<br />9081000C C041000C<br />EC22082A 00000000<br />C239DFE4 00000003<br />C0210008 3C8042C0<br />90810008 C0410008<br />EC22082A 00000000<br />C239C9DC 00000003<br />EC20F82A 3C8042C0<br />9081000C C041000C<br />EC22082A 00000000<br />C239F2D0 00000003<br />C0210014 3C8042C0<br />90810014 C0410014<br />EC22082A 00000000<br />C239F8B0 00000003<br />C0210008 3C8042C0<br />90810008 C0410008<br />EC22082A 00000000<br />C239E1B8 00000003<br />C0210020 3C8042C0<br />90810020 C0410020<br />EC22082A 00000000<br />C239D41C 00000003<br />C0210018 3C8042C0<br />90810018 C0410018<br />EC22082A 00000000<br />043A12D8 C2A00000<br />043A11B8 42600000<br />043A1410 C2A00000<br />C23A0010 00000003<br />EFE10028 3C60C2C0<br />90610014 C0010014<br />EFE0F82A 00000000<br />043A1430 C2700000<br />043A1420 C2800000<br />E2000001 80080000<br />203B21E4 3B200002<br />C23B1FE0 00000003<br />EC01002A 3C8042C0<br />90810084 C0410084<br />EC02002A 00000000<br />C23B294C 00000003<br />EC02002A 3C8042C0<br />9081000C C041000C<br />EC02002A 00000000<br />C23B5738 00000003<br />EC02002A 3C8042C0<br />90810008 C0410008<br />EC02002A 00000000<br />C23B45C4 00000003<br />EC02002A 3C8042C0<br />9081000C C041000C<br />EC02002A 00000000<br />043B8D04 C2000000<br />043B8FC8 C2A00000<br />043B8FB8 C2C00000<br />043B8E50 42500000<br />043B92A4 C2A00000<br />043B8F68 C2C00000<br />043B8F08 C2A00000<br />E2000001 80008000<br />C20F12CC 00000003<br />3C803FAB 3CA08014<br />9085CC7C 9085CCD8<br />807F0014 00000000<br />04196C10 43EC0000<br />C20F5B74 00000002<br />3C00C298 90010014<br />C0610014 00000000<br />04196B50 440A0000<br />04196B54 43180000<br />04196B60 441B0000<br />04196B68 C2300000<br />04195710 44120000<br />203A2F58 42C80000<br />C239E56C 00000002<br />3C003F20 9001000C<br />C041000C 00000000<br />043A300C 44510000<br />C239C838 00000005<br />FC20E090 C04280A8<br />FC020840 41810014<br />3CA042C0 90A10050<br />C0410050 EC21102A<br />60000000 00000000<br />E2000001 80008000<br />203A53BC 42300000<br />043A53B8 C1800000<br />043A53C0 42500000<br />E2000001 80008000<br />203A38D8 3F800000<br />043A38B8 42300000<br />043A38C0 42500000<br />E2000001 80008000<br />203AA278 434F0000<br />043AA268 C2000000<br />043AA270 42500000<br />E2000001 80008000<br />2039F4E0 44008000<br />0439F4D0 C0000000<br />0439F4D8 42500000<br />E2000001 80008000<br /><br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">Always A Rank</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">2039D4E4 B</span><span style="background-color:transparent"><font face="courier new, monospace">01F0008</font></span></div>
+                                                                        <div><span style="background-color:transparent"><font face="courier new, monospace">0439D488 48000028</font></span></div>
+                                                                        <div><span style="background-color:transparent"><font face="courier new, monospace">E2000001 80008000</font></span></div>
+                                                                        <div><span style="background-color:transparent"><font face="courier new, monospace"><br />Pass Through Snowballs Avalanche<br />48000000 800030C8<br />DE000000 80008180<br />3000D0E8 38000000<br />1400D0E4 60000000<br />E0000000 80008000<br /><br /></font></span></div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">Menu BG Palette Modifier</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">20632E68 80632EA0</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E80 0000XXXX</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E82 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E84 0000YYYY</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E86 0000YYYY</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E88 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E8A 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E8C 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E8E 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E90 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E92 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E94 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E96 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">02632E98 0000ZZZZ</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">Palettes are in RGB5A3 Format. Will not Work for Minigame Mode Menus.</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">XXXX-Main BG</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">YYYY-Inside Star</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">ZZZZ-Star Border</font>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace"><br /></font>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace">Broken 2D Transparency<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">040114D0 60000000<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">040114DC 60000000<br /><br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">Unlock All Minigames<br />0214C8AC 0000FFFF<br />Permanent if Saved.<br /><br />Mute Sound Effects<br />04040038 38600000<br /><br />Mute All Dancer Commentary</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">040FF260 60000000</span></div>
+                                                                        <div><span style="font-family:courier new,monospace"><br />Alternate World Map HUD<br />060DCFC4 00000068<br />38E0000F 90ED8548<br />38600006 3880001C<br />3CA0800E 38A5D200<br />3CC08015 A8C6BAD0<br />C0229C44 3CE08000<br />60E7C014 7CE903A6<br />4E800421 38600006<br />38800030 3CA0800E<br />38A5D207 3CC08015<br />88C6BADD 38C6FFFF<br />C0229C44 3CE08000<br />60E7C014 7CE903A6<br />4E800421 480004E4<br />040DCF20 C00D8000<br />040DD200 434F494E<br />040DD204 2564004C<br />040DD208 49464525<br />040DD20C 64000000<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">Does not display when paused and uses debug text.<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace"><br />No Audio<br />0403E3E0 38600000<br />040C8734 4E800020<br />040C78B8 4E800020<br />04040044 4800001C<br />041943FC 00000001<br />Cannot Reenter Main Menu from Free Mode.<br /><br />No Music<br />041943FC 00000001<br />Cannot Reenter Main Menu from Free Mode.<br /><br />Cannot Reset Game<br />0405B1C8 60000000<br /><br />Autopress Start on Tile Screen<br />203A5F14 41820050<br />043A5F14 60000000<br />E2000001 80008000<br /><br />Skip Intro<br />2039E36C 38000000<br />0439E290 38007FFF<br />E2000001 80008000<br /><br />Tutorial Doesn't Start After 20 Seconds on Title Screen<br />203A5F78 3BE0FFFF<br />043A5F74 48000008<br />E2000001 80008000<br /><br />Auto Start World Story Mode<br />2039D74C 41820020<br />0439D74C 60000000<br />E2000001 80008000<br /><br />Skip Safety Screen<br />2039E108 40800048<br />0439E108 48000048<br />E2000001 80008000<br /><br />Auto Advance Scrolling Textboxes<br />0404B444 60000000<br /><br />Defective Pause<br />040D4004 3860FFFF<br /><br />Access Versus Mode without 2 Controllers<br />203A4478 7C660734<br />043A4480 48000018<br />043A3A2C 48000014<br />E2000001 80008000<br /><br />Unlock Super Hard Difficulty for All Songs<br />0414C8B0 FFFFFFFF<br />Permanent if Saved.<br /><br />Unlock Hard and Very Hard Difficulty Story Mode<br />0014C8B4 000000FF<br />Permanent if Saved.<br /><br />Unlock All Songs<br />0414C8A4 FFFFFFFF<br />0414C8A8 FFFFFFFF<br />Permanent if Saved.<br /><br />Unlock EX Story Mode<br />0014C891 00000001<br />Permanent if Saved.<br /><br />Infinite Time in Minigames<br />C205B928 00000005<br />3DC08019 61CE412A<br />A9CE0000 71CE0010<br />2C0E0010 38000000<br />40820008 38600000<br />7C030214 00000000<br />Press Z on Player 1's Controller to Disable.<br /><br />Always Have 999 Coins<br />C20DCFCC 00000002<br />380003E7 B0030008<br />A8030008 00000000<br />2039DE18 B061000C<br />C239DE14 00000002<br />39C003E7 B1C30008<br />386003E7 00000000<br />E2000001 80008000<br /><br />Always Have 99 Lives<br />C20DD030 00000002<br />38000064 98030015<br />60000000 00000000<br />2039DFAC 98610009<br />C239DFA8 00000002<br />39C00064 99C30015<br />38600064 00000000<br />E2000001 80008000<br /><br />Infinite Lives<br />2039D22C 3863FFFF<br />0439D22C 38630000<br />E2000001 80008000<br /><br />Buy Items Without Enough Money<br />2039FF70 380003E7<br />0439FE68 3B4003E7<br />E2000001 80008000<br />040DF3A4 386003E7<br /><br />Free Shop Items<br />2039FE7C 38600012<br />0439FE70 38000000<br />0439FF3C 38000000<br />0439FFA8 38000000<br />0439F974 3AE00000<br />E2000001 80008000<br />040DF3A8 38000000<br />040DF454 38000000<br />040DEA00 3AA00000<br /><br />P1 Max Score in Dance Games<br />C20F978C 00000004<br />2C1E0001 41820010<br />3C803B9A 6084C9FF<br />909F0054 809F0054<br />60000000 00000000<br /><br />Max Score Whack a Goomba<br />48000000 800030C8<br />DE000000 80008180<br />300116AC 2C000005<br />14011670 41820164<br />140116B0 41820124<br />D20117B4 00000002<br />38000063 B01F0010<br />60000000 00000000<br />E0000000 80008000<br /><br />Invinicible Note Pickup<br />48000000 800030C8<br />DE000000 80008180<br />300050D8 4E800020<br />140050DC 4E800020<br />E0000000 80008000<br /><br />Jump in Midair Note Pickup<br />48000000 800030C8<br />DE000000 80008180<br />300050D8 4E800020<br />D2004744 00000005<br />3DC08019 A9CE4162<br />71CE0808 2C0E0000<br />4182000C 38600000<br />907F0080 807F0080<br />60000000 00000000<br />E0000000 80008000<br /><br />No Low Time Warning<br />040425A8 48000278<br />0405E174 3860012D<br /><br />Max Score Banana Storm<br />48000000 800030C8<br />DE000000 80008180<br />3000F5E8 38000063<br />1400F5E4 60000000<br />E0000000 80008000<br />Collect a Banana.<br /><br />Max Score on Gain Punch Up<br />48000000 800030C8<br />DE000000 80008180<br />3000F2D0 7C00BA14<br />1400F2D0 3800270F<br />E0000000 80008000<br /><br />Automatically Collect Coins Coin Collection<br />48000000 800030C8<br />DE000000 80008180<br />3000C6E8 2C000000<br />1400C6EC 60000000<br />1400C6FC 60000000<br />1400C704 60000000<br />E0000000 80008000<br /><br />Max Coins on Gain Coin Collection<br />48000000 800030C8<br />DE000000 80008180<br />30010010 7C030214<br />14010010 380003E7<br />E0000000 80008000<br /><br />Low Gravity Whee!<br />48000000 800030C8<br />DE000000 80008180<br />3000FD3C D01F0044<br />1400FD3C 60000000<br />E0000000 80008000<br /><br />All Coins Worth 33 Coins Whee!<br />48000000 800030C8<br />DE000000 80008180<br />3000FC38 4082001C<br />1400FC38 60000000<br />E0000000 80008000<br /><br />Max Coins Whee!<br />48000000 800030C8<br />DE000000 80008180<br />3000FBC8 2C000000<br />1400FBCC 4182009C<br />1400FBF0 40800078<br />D200FC68 00000002<br />380003E7 901B0034<br />60000000 00000000<br />E0000000 80008000<br /><br />Autocollect Coins Whee!<br />48000000 800030C8<br />DE000000 80008180<br />3000FBC8 2C000000<br />1400FBC0 3A600001<br />1400FBEC 2C000000<br />E0000000 80008000<br /><br />Max Notes on Gain Note Pickup<br />48000000 800030C8<br />DE000000 80008180<br />30002C04 38030001<br />14002C04 3800000D<br />E0000000 80008000<br /><br />Cannot Lose Fire up the SS Brass<br />48000000 800030C8<br />DE000000 80008180<br />300020BC 3803FFFF<br />140020B4 60000000<br />14002094 60000000<br />E0000000 80008000<br /><br />Starting Time Modifer in Most Minigames<br />0405BD88 380000XX<br />XX-Decimal Number Converted to Hex.<br /><br />Note Pickup Starting Time Modifier<br />48000000 800030C8<br />DE000000 80008180<br />300060E4 38A00000<br />D20060E0 00000002<br />388000XX 1C84003C<br />60000000 00000000<br />E0000000 80008000<br />XX-Decimal Number Converted to Hex.<br /><br />Timer Speed Modifier<br />C205B5F8 00000002<br />3BA000XX 7FBD00D0<br />60000000 00000000<br />XX-Decimal Number Converted to Hex. Speed is timer decrement per frame.<br /><br />Combo Never Ends<br />040FA63C 60000000<br />040FA5A0 60000000<br /><br />P1 Dance Meter Always Full<br />C20F96D0 00000003<br />2C1E0001 4182000C<br />388003E8 B09F0036<br />A89F0036 00000000<br /><br />Lower Weight Limit is 0.0 Pounds<br />2039E114 38600001<br />0439E0E4 2C040001<br />0439E10C 2C030009<br />0439E168 2C000000<br />0439E170 38000000<br />E2000001 80008000<br /><br />Upper Weight Limit is 999.9 Pounds<br />2039E114 38600001<br />0439DFE0 2C032706<br />0439DFD8 2C03270E<br />0439E030 2C03270F<br />0439E038 3880270F<br />E2000001 80008000<br /><br />Debug Menu<br />0411518C 80114F54<br />Start a New Story Mode Save or Load a Story Mode Save.<br /><br />Prevent Constant Zoom Out DANCE VIEW<br />2039C7B8 EC010028<br />0439C7BC 60000000<br />0439C810 60000000<br />E2000001 80008000<br /><br />Prevent Constant Zoom Out DDR motchk<br />2039C468 EC01002A<br />0439C46C 60000000<br />0439C490 60000000<br />0439C4A8 60000000<br />0439C42C 60000000<br />0439C3EC 60000000<br />0439C3AC 60000000<br />E2000001 80008000<br /><br />Character Modifer<br />0214BAA8 0000XXXX<br />0214BAB8 0000YYYY<br />XXXX-Player 1<br />YYYY-Player 2<br />0000-Mario<br />0001-Luigi<br />0002-Wario<br />0005-Boo<br />0006-Toadette<br />Any Character other than Mario or Luigi will not work in Minigames<br />Both players must be different characters or one of the players will be invisible.<br /><br />Story Mode Items Modifier<br />0214BAD2 0000XXXX<br />0414BAD4 YYYYZZZZ<br />XXXX-Item 1<br />YYYY-Item 2<br />ZZZZ-Item 3<br /><br />Story Mode Item Modifier Values<br />0000-Big Heart<br />0001-Small Heart<br />0002-Music Wand<br />0003-1-Up Mushroom<br />0004-Lucky Clover<br />0005-Max Drink<br />0006-Mystery Drink<br />FFFF-Nothing<br /><br /></span></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div id="sites-canvas-bottom-panel">
+                                                <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+                                                <div id="sites-attachments-container">
+                                                </div>
+                                                <a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+                                                <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments">
+                                                    <div class="sites-comment-docos-wrapper">
+                                                        <div class="sites-comment-docos">
+                                                            <div class="sites-comment-docos-background"></div>
+                                                            <div class="sites-comment-docos-header">
+                                                                <div class="sites-comment-docos-header-title">Comments</div>
+                                                            </div>
+                                                            <div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sites-chrome-footer-wrapper">
+                        <div id="sites-chrome-footer-wrapper-inside">
+                            <div id="sites-chrome-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sites-chrome-adminfooter-container">
+                <div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation">
+                    <p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/gamecube/dance-dance-revolution-mario-mix-gwze01&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span>
+                        <a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="https://sites.google.com/system/app/pages/reportAbuse" target="_blank">Report Abuse</a>
+                        <span aria-hidden="true">|</span>
+                        <a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('sjl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/613cd8/system/js/jot_min_view__en.js"></script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('jl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        sites.Searchbox.initialize(
+            'sites-searchbox-search-button', {
+                "object": []
+            }['object'],
+            'search-site', {
+                "label": "Configure search options...",
+                "url": "/system/app/pages/admin/settings"
+            });
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        JOT_setupNav("2bd", "Navigation", true);
+        JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXt8KnizOovbQyvp8VjTqyjsDAQLH-B6Jv5gbEpbU717t87UvkWblndT0rJXd9f7eS5Dl25dFHdm4LttMkKSF53jCh-swHEU7HcSFjr2zZz-X3M9XE9ocrhQ5k8xHvAFoLHjX3XgTmYEW6nBUu653fkPULwNCw/api/js?anon=true',
+            false, false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        setTimeout(function() {
+            var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+            gsites.Xhr.send('https://sites.google.com/_/tz', null, null, 'GET', null, null, {
+                afjstz: fingerprint
+            });
+        }, 500);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml">
+        window.onload = function() {
+            if (false) {
+                JOT_setMobilePreview();
+            }
+            var loadTimer = window.jstiming.load;
+            loadTimer.tick("ol");
+            loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+            window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+        }
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+            webspace, "en");
+        maestroRunner.initListeners();
+        maestroRunner.installEditRender();
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        //<![CDATA[
+        // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+        if (webspace.user.hasWriteAccess) {
+            JOT_decorateButtons();
+        }
+
+        // Fires delayed events.
+        (function() {
+            JOT_fullyLoaded = true;
+            var delayedEvents = JOT_delayedEvents;
+            for (var x = 0; x < delayedEvents.length; x++) {
+                var event = delayedEvents[x];
+                JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+            }
+            JOT_delayedEvents = null;
+            JOT_postEvent('pageLoaded');
+        })();
+        //]]>
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_postEvent('decorateGvizCharts');
+    </script>
+    <script type="text/javascript">
+        JOT_setupPostRenderingManager();
+    </script>
+    <script type="text/javascript">
+        JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+    </script>
+    <script type="text/javascript">
+        sites.codeembed.init();
+    </script>
+    <div id="server-timer-div" style="display:none"> </div>
+    <script type="text/javascript">
+        window.jstiming.load.tick('render');
+        JOT_postEvent('usercontentrendered', this);
+    </script>
+</body>
+
+</html>

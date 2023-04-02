@@ -1,0 +1,1321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+            (function() {
+                function e(g) {
+                    this.t = {};
+                    this.tick = function(h, k, f) {
+                        this.t[h] = [void 0 != f ? f : (new Date).getTime(), k];
+                        if (void 0 == f) try {
+                            window.console.timeStamp("CSI/" + h)
+                        } catch (m) {}
+                    };
+                    this.getStartTickTime = function() {
+                        return this.t.start[0]
+                    };
+                    this.tick("start", null, g)
+                }
+                var a;
+                if (window.performance) var d = (a = window.performance.timing) && a.responseStart;
+                var l = 0 < d ? new e(d) : new e;
+                window.jstiming = {
+                    Timer: e,
+                    load: l
+                };
+                if (a) {
+                    var b = a.navigationStart;
+                    0 < b && d >= b && (window.jstiming.srt = d - b)
+                }
+                if (a) {
+                    var c = window.jstiming.load;
+                    0 < b && d >=
+                        b && (c.tick("_wtsrt", void 0, b), c.tick("wtsrt_", "_wtsrt", d), c.tick("tbsd_", "wtsrt_"))
+                }
+                try {
+                    a = null, window.chrome && window.chrome.csi && (a = Math.floor(window.chrome.csi().pageT), c && 0 < b && (c.tick("_tbnd", void 0, window.chrome.csi().startE), c.tick("tbnd_", "_tbnd", b))), null == a && window.gtbExternal && (a = window.gtbExternal.pageT()), null == a && window.external && (a = window.external.pageT, c && 0 < b && (c.tick("_tbnd", void 0, window.external.startE), c.tick("tbnd_", "_tbnd", b))), a && (window.jstiming.pt = a)
+                } catch (g) {}
+            })();
+        })()
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="//www.google.com/images/icons/product/sites-16.ico" />
+    <link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/b9fbb7/system/app/images/apple-touch-icon.png" type="image/png" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            function d(a) {
+                return document.getElementById(a)
+            }
+            window.byId = d;
+
+            function g(a) {
+                return a.replace(/^\s+|\s+$/g, "")
+            }
+            window.trim = g;
+            var h = [],
+                k = 0;
+            window.JOT_addListener = function(a, b, c) {
+                var f = new String(k++);
+                a = {
+                    eventName: a,
+                    handler: b,
+                    compId: c,
+                    key: f
+                };
+                h.push(a);
+                return f
+            };
+            window.JOT_removeListenerByKey = function(a) {
+                for (var b = 0; b < h.length; b++)
+                    if (h[b].key == a) {
+                        h.splice(b, 1);
+                        break
+                    }
+            };
+            window.JOT_removeAllListenersForName = function(a) {
+                for (var b = 0; b < h.length; b++) h[b].eventName == a && h.splice(b, 1)
+            };
+            window.JOT_postEvent = function(a, b, c) {
+                var f = {
+                    eventName: a,
+                    eventSrc: b || {},
+                    payload: c || {}
+                };
+                if (window.JOT_fullyLoaded)
+                    for (b = h.length, c = 0; c < b && c < h.length; c++) {
+                        var e = h[c];
+                        e && e.eventName == a && (f.listenerCompId = e.compId || "", (e = "function" == typeof e.handler ? e.handler : window[e.handler]) && e(f))
+                    } else window.JOT_delayedEvents.push({
+                        eventName: a,
+                        eventSrc: b,
+                        payload: c
+                    })
+            };
+            window.JOT_delayedEvents = [];
+            window.JOT_fullyLoaded = !1;
+            window.JOT_formatRelativeToNow = function(a, b) {
+                a = ((new Date).getTime() - a) / 6E4;
+                if (1440 <= a || 0 > a) return null;
+                var c = 0;
+                60 <= a && (a /= 60, c = 2);
+                2 <= a && c++;
+                return b ? window.JOT_siteRelTimeStrs[c].replace("__duration__", Math.floor(a)) : window.JOT_userRelTimeStrs[c].replace("__duration__", Math.floor(a))
+            };
+        })()
+    </script>
+    <script>
+        var breadcrumbs = [{
+            "path": "/gamecube",
+            "deleted": false,
+            "title": "Nintendo GameCube",
+            "dir": "ltr"
+        }, {
+            "path": "/gamecube/mario-party-6-gp6e01",
+            "deleted": false,
+            "title": "Mario Party 6 (GP6E01)",
+            "dir": "ltr"
+        }];
+        var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/b9fbb7/system/app/images/cleardot.gif';
+
+
+        var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+
+
+
+
+
+
+        var webspace = {
+            "gvizGstaticVersion": "current",
+            "enableAnalytics": false,
+            "pageSharingId": "jotspot_page",
+            "codeembeds": {
+                "outerIframeSrc": "https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html",
+                "innerIframeSrc": "https://365206713-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"
+            },
+            "enableUniversalAnalytics": false,
+            "sharingPolicy": "OPENED",
+            "siteTitle": "gamemasterplc's cheat codes",
+            "experiments": {
+                "enableSubpagesGadgetInTakeout": true,
+                "overrideDisableDomainEditing": false,
+                "DisableSiteEditingFeature__disable_site_editing": true,
+                "disableDomainEditing": true
+            },
+            "jot2atari": {
+                "eligibility": "INELIGIBLE"
+            },
+            "onepickUrl": "https://docs.google.com/picker",
+            "adsensePublisherId": null,
+            "features": {
+                "moreMobileStyleImprovements": null,
+                "subscriptionDataMigrationInProgress": null,
+                "plusBadge": false
+            },
+            "configProperties": {
+                "disableSiteEditing": null
+            },
+            "isPublic": true,
+            "newSitesBaseUrl": "https://sites.google.com",
+            "isConsumer": true,
+            "serverFlags": {
+                "jot2AtariLearnMoreUrl": "https://support.google.com/sites/answer/7035197"
+            },
+            "domainAnalyticsAccountId": "",
+            "plusPageId": "",
+            "signInUrl": "https://accounts.google.com/AccountChooser?continue=https://sites.google.com/gamecube/mario-party-6-gp6e01&service=jotspot",
+            "analyticsAccountId": "",
+            "scottyUrl": "/_/upload",
+            "homePath": "/",
+            "siteNoticeUrlEnabled": null,
+            "plusPageUrl": "",
+            "adsensePromoClickedOrSiteIneligible": true,
+            "csiReportUri": "https://gg.google.com/csi",
+            "sharingId": "jotspot",
+            "termsUrl": "//www.google.com/intl/en/policies/terms/",
+            "gvizVersion": 1,
+            "editorResources": {
+                "sitelayout": ["https://ssl.gstatic.com/sites/p/b9fbb7/system/app/css/sitelayouteditor.css"],
+                "text": ["https://ssl.gstatic.com/sites/p/b9fbb7/system/js/codemirror.js", "https://ssl.gstatic.com/sites/p/b9fbb7/system/app/css/codemirror_css.css", "https://ssl.gstatic.com/sites/p/b9fbb7/system/js/trog_edit__en.js", "https://ssl.gstatic.com/sites/p/b9fbb7/system/app/css/trogedit.css", "/_/rsrc/1636618700000/system/app/css/editor.css", "https://ssl.gstatic.com/sites/p/b9fbb7/system/app/css/codeeditor.css", "/_/rsrc/1636618700000/system/app/css/camelot/editor-jfk.css"]
+            },
+            "sharingUrlPrefix": "/_/sharing",
+            "isAdsenseEnabled": true,
+            "domain": "defaultdomain",
+            "baseUri": "/",
+            "name": "gamemasterplcscheatcodes",
+            "siteTemplateId": false,
+            "siteNoticeRevision": null,
+            "siteNoticeUrlAddress": null,
+            "siteNoticeMessage": null,
+            "page": {
+                "isRtlLocale": false,
+                "canDeleteWebspace": null,
+                "isPageDraft": null,
+                "parentPath": "/gamecube",
+                "parentWuid": "wuid:gx:22da14cd8835627",
+                "siteLocale": "en",
+                "timeZone": "America/Los_Angeles",
+                "type": "text",
+                "title": "Mario Party 6 (GP6E01)",
+                "locale": "en",
+                "wuid": "wuid:gx:857fbb086f598e8",
+                "revision": 18,
+                "path": "/gamecube/mario-party-6-gp6e01",
+                "isSiteRtlLocale": false,
+                "pageInheritsPermissions": null,
+                "name": "mario-party-6-gp6e01",
+                "canChangePath": true,
+                "state": "",
+                "properties": {},
+                "bidiEnabled": false,
+                "currentTemplate": {
+                    "path": "/system/app/pagetemplates/text",
+                    "title": "Web Page"
+                }
+            },
+            "canPublishScriptToAnyone": true,
+            "user": {
+                "keyboardShortcuts": true,
+                "sessionIndex": "",
+                "guest_": true,
+                "displayNameOrEmail": "guest",
+                "userName": "guest",
+                "uid": "",
+                "renderMobile": false,
+                "domain": "",
+                "namespace": "",
+                "hasWriteAccess": false,
+                "namespaceUser": false,
+                "primaryEmail": "guest",
+                "hasAdminAccess": false,
+                "isGoogleAdmin": false
+            },
+            "gadgets": {
+                "baseUri": "/system/app/pages/gadgets"
+            }
+        };
+        webspace.page.breadcrumbs = breadcrumbs;
+
+
+        var JOT_siteRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+    </script>
+    <script type="text/javascript">
+        window.jstiming.load.tick('scl');
+    </script>
+    <meta name="title" content="Mario Party 6 (GP6E01) - gamemasterplc's cheat codes" />
+    <meta itemprop="name" content="Mario Party 6 (GP6E01) - gamemasterplc's cheat codes" />
+    <meta property="og:title" content="Mario Party 6 (GP6E01) - gamemasterplc's cheat codes" />
+    <meta name="description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <meta itemprop="description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <meta id="meta-tag-description" property="og:description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/b9fbb7/system/app/themes/default/standard-css-default-ltr-ltr.css" />
+    <link rel="stylesheet" type="text/css" href="/_/rsrc/1636618700000/system/app/css/overlay.css?cb=default150goog-ws-leftnone30themedefaultstandard" />
+    <link rel="stylesheet" type="text/css" href="/_/rsrc/1636618700000/system/app/css/camelot/allthemes-view.css" />
+    <!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+    <title>Mario Party 6 (GP6E01) - gamemasterplc's cheat codes</title>
+
+    <div class="battle-for-libaries">
+        <a href="https://www.battleforlibraries.com/" ?><b>❗</b> This site is archived by EndangeredNayla. Mirrored on April 1st 2023 from a February 2023 backup.<b>❗</b></a></a>
+    </div>
+
+    <style>
+        .battle-for-libaries {
+            background-color: #0af176;
+            overflow: hidden;
+        }
+        /* Style the links inside the navigation bar */
+        
+        .battle-for-libaries a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.jstiming.load.tick('cl');
+    </script>
+</head>
+
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+    <div id="sites-page-toolbar" class="sites-header-divider">
+        <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;">
+            <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div>
+        </div>
+    </div>
+    <div id="sites-chrome-everything-scrollbar">
+        <div id="sites-chrome-everything" class="">
+            <div id="sites-chrome-page-wrapper" style="direction: ltr">
+                <div id="sites-chrome-page-wrapper-inside">
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+                        <table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+                            <tr class="sites-header-primary-row" id="sites-chrome-userheader">
+                                <td id="sites-header-title" class="" role="banner">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <h2><a href="https://sites.google.com/" dir="ltr" id="sites-chrome-userheader-title">gamemasterplc's cheat codes</a></h2>
+                                    </div>
+                                </td>
+                                <td class="sites-layout-searchbox  ">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" />
+                                            <div id="sites-searchbox-button-set" class="goog-inline-block">
+                                                <div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+                                <td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="sites-chrome-main-wrapper">
+                        <div id="sites-chrome-main-wrapper-inside">
+                            <table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+                                <tr>
+                                    <td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation">
+                                            <div class="sites-embed-content sites-sidebar-nav">
+                                                <ul role="navigation" jotId="navList" class="has-expander">
+                                                    <li class="topLevel nav-first ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="/home" jotId="wuid:gx:6939b6521e98137f" class="sites-navigation-link topLevel">Home</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7aea457ca7351438">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/nintendo-64" jotId="wuid:gx:7aea457ca7351438" class="sites-navigation-link topLevel">Nintendo 64</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-ntsc-j" jotId="wuid:gx:19ef26b8e4e5ef0" class="sites-navigation-link">Mario Party (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party" jotId="wuid:gx:2b345c5f47fa1237" class="sites-navigation-link">Mario Party (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-pal" jotId="wuid:gx:58ff2eef094b8d3a" class="sites-navigation-link">Mario Party (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2-ntsc-j" jotId="wuid:gx:27b610996cc1efac" class="sites-navigation-link">Mario Party 2 (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2" jotId="wuid:gx:78ebd597892ebd18" class="sites-navigation-link">Mario Party 2 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2-pal" jotId="wuid:gx:20c1f2af5cd58611" class="sites-navigation-link">Mario Party 2 (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3-1" jotId="wuid:gx:2fba3a6a362fceb4" class="sites-navigation-link">Mario Party 3 (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3" jotId="wuid:gx:742074824241cf85" class="sites-navigation-link">Mario Party 3 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3-pal" jotId="wuid:gx:76fcf1032d2506e3" class="sites-navigation-link">Mario Party 3 (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/paper-mario-ntsc-u" jotId="wuid:gx:f9d89eed713fbbf" class="sites-navigation-link">Paper Mario (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/pokemon-stadium-ntsc-u" jotId="wuid:gx:c6058d4c49f82b4" class="sites-navigation-link">Pokemon Stadium (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/super-mario-64-ntsc-u" jotId="wuid:gx:66ebb0d0a24eba83" class="sites-navigation-link">Super Mario 64 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/super-smash-bros-ntsc-u" jotId="wuid:gx:6f4880385202f92f" class="sites-navigation-link">Super Smash Bros (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/the-legend-of-zelda-ocarina-of-time-1-2-ntsc" jotId="wuid:gx:5274f6b71c227bf1" class="sites-navigation-link">The Legend of Zelda Ocarina of Time (1.2 NTSC)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:66cf8369a41bf37d">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/nintendo-ds" jotId="wuid:gx:66cf8369a41bf37d" class="sites-navigation-link topLevel">Nintendo DS</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/bomberman-land-touch-ntsc-u" jotId="wuid:gx:16c69b75df743612" class="sites-navigation-link">Bomberman Land Touch (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/bomberman-land-touch-2-ntsc-u" jotId="wuid:gx:15192635b788f3f6" class="sites-navigation-link">Bomberman Land Touch 2 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-and-sonic-at-the-olympic-games-ntsc-u" jotId="wuid:gx:3f6167c1c741a57e" class="sites-navigation-link">Mario and Sonic at the Olympic Games (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-kart-ds-ntsc-u-pal" jotId="wuid:gx:16ef37efae90cba3" class="sites-navigation-link">Mario Kart DS (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-party-ds-ntsc-u" jotId="wuid:gx:1c8d8bcc328f2ce9" class="sites-navigation-link">Mario Party DS (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-party-ds-pal" jotId="wuid:gx:7d1c761efbe739e3" class="sites-navigation-link">Mario Party DS (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/sonic-rush-adventure-ntsc-u" jotId="wuid:gx:70922470b1e2aff0" class="sites-navigation-link">Sonic Rush Adventure (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/super-mario-64-ds-pal" jotId="wuid:gx:7ecc45a14274e2b7" class="sites-navigation-link">Super Mario 64 DS (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/super-monkey-ball-touch-and-roll-ntsc-u" jotId="wuid:gx:546838db19b824b7" class="sites-navigation-link">Super Monkey Ball Touch and Roll (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:22da14cd8835627">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/gamecube" jotId="wuid:gx:22da14cd8835627" class="sites-navigation-link topLevel">Nintendo GameCube</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/dance-dance-revolution-mario-mix-gwze01" jotId="wuid:gx:44db319b32e6f5a1" class="sites-navigation-link">Dance Dance Revolution Mario Mix (GWZE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/f-zero-gx-gfze01" jotId="wuid:gx:2438805c332037b6" class="sites-navigation-link">F-Zero GX (GFZE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/hot-wheels-world-race-ghre78" jotId="wuid:gx:22883aef70a0a172" class="sites-navigation-link">Hot Wheels World Race (GHRE78)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/kirby-air-ride-gkye01" jotId="wuid:gx:5c9e61402779433" class="sites-navigation-link">Kirby Air Ride (GKYE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-4-gmpe01" jotId="wuid:gx:2b6e743ca44e9338" class="sites-navigation-link">Mario Party 4 (GMPE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-5-gp5e01" jotId="wuid:gx:6557bee485bc4162" class="sites-navigation-link">Mario Party 5 (GP5E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-5-gp5p01" jotId="wuid:gx:3db5a57e91857288" class="sites-navigation-link">Mario Party 5 (GP5P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="current-bg" jotId="wuid:gx:857fbb086f598e8" dir="ltr" style="padding-left: 38px;">Mario Party 6 (GP6E01)</div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6" jotId="wuid:gx:40f3d8bc9f55e396" class="sites-navigation-link">Mario Party 6 (GP6J01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6-gp6p01" jotId="wuid:gx:41a55e46a8e1fd2b" class="sites-navigation-link">Mario Party 6 (GP6P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-7-gp7e01" jotId="wuid:gx:42f385f7e18fe398" class="sites-navigation-link">Mario Party 7 (GP7E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-7-gp7p01" jotId="wuid:gx:2206a083c8082c6c" class="sites-navigation-link">Mario Party 7 (GP7P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-power-tennis-gome01" jotId="wuid:gx:90c95477a5044c" class="sites-navigation-link">Mario Power Tennis (GOME01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/pc-genjin-gp4j18" jotId="wuid:gx:6dfe5808acaf683a" class="sites-navigation-link">PC Genjin (GP4J18)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/skies-of-arcadia-legends-ntsc-u" jotId="wuid:gx:37b0bb6de4c05cea" class="sites-navigation-link">Skies of Arcadia Legends (GEAE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-adventure-2-battle-gsne8p" jotId="wuid:gx:5a51cdc69ab67d7f" class="sites-navigation-link">Sonic Adventure 2 Battle (GSNE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-adventure-dx-director-s-cut-ntsc-u" jotId="wuid:gx:2636b44dfe06966b" class="sites-navigation-link">Sonic Adventure DX Director's Cut (GXSE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-heroes-g9se8p" jotId="wuid:gx:61f642895a4406d" class="sites-navigation-link">Sonic Heroes (G9SE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/spongebob-squarepants-battle-for-bikini-botton-gqpe78" jotId="wuid:gx:3f8290be0aea8486" class="sites-navigation-link">SpongeBob SquarePants: Battle for Bikini Bottom (GQPE78)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/super-mario-sunshine-ntsc-u" jotId="wuid:gx:77a535a32bc19e6f" class="sites-navigation-link">Super Mario Sunshine (GMSE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/tales-of-symphonia-gqseaf" jotId="wuid:gx:2604b18f4c68a1d3" class="sites-navigation-link">Tales of Symphonia (GQSEAF)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/the-legend-of-zelda-the-wind-waker-gzle01" jotId="wuid:gx:628bf33e7e6b85bf" class="sites-navigation-link">The Legend of Zelda The Wind Waker (GZLE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/wario-ware-inc-mega-party-games-gzwe01" jotId="wuid:gx:8c966e29a3c149" class="sites-navigation-link">Wario Ware Inc Mega Party Games (GZWE01)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7012bd522bd7c7ac">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/wii" jotId="wuid:gx:7012bd522bd7c7ac" class="sites-navigation-link topLevel">Nintendo Wii</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/calling-scae18" jotId="wuid:gx:192c65413923fd4b" class="sites-navigation-link">Calling (SCAE18)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-and-sonic-at-the-olympic-winter-games-role8p" jotId="wuid:gx:76bf374ca75b4bab" class="sites-navigation-link">Mario and Sonic at the Olympic Winter Games (ROLE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8e01" jotId="wuid:gx:151dbda2c6755e48" class="sites-navigation-link">Mario Party 8 (RM8E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8j01" jotId="wuid:gx:19d72b70348b1752" class="sites-navigation-link">Mario Party 8 (RM8J01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8p01" jotId="wuid:gx:1070f6de169d49c5" class="sites-navigation-link">Mario Party 8 (RM8P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-9-ssqe01" jotId="wuid:gx:26f4ce4437b95959" class="sites-navigation-link">Mario Party 9 (SSQE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-64-dlc-naae" jotId="wuid:gx:606f6d0b0104c129" class="sites-navigation-link">Super Mario 64 (DLC) (NAAE)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-galaxy-2-sb4e01" jotId="wuid:gx:222f58352403052f" class="sites-navigation-link">Super Mario Galaxy 2 (SB4E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-world-dlc-jaae" jotId="wuid:gx:37d2004609a323b" class="sites-navigation-link">Super Mario World (DLC) (JAAE)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/the-legend-of-zelda-majora-s-mask-dlc-nare" jotId="wuid:gx:3ca86aee3bd469f4" class="sites-navigation-link">The Legend of Zelda Majora's Mask (DLC) (NARE)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7dc09108fd6260e6">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/playstation-1" jotId="wuid:gx:7dc09108fd6260e6" class="sites-navigation-link topLevel">Playstation 1</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-1/bomberman-fantasy-race-ntsc-u" jotId="wuid:gx:456f06c9cf1e2a4f" class="sites-navigation-link">Bomberman Fantasy Race NTSC-U</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-1/spyro-the-dragon-ntsc-u" jotId="wuid:gx:69dfc28a4d38b2d" class="sites-navigation-link">Spyro the Dragon (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:19ed278724731e20">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/playstation-2" jotId="wuid:gx:19ed278724731e20" class="sites-navigation-link topLevel">Playstation 2</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-2/sonic-gems-collection-pal" jotId="wuid:gx:475f45f10cf34350" class="sites-navigation-link">Sonic Gems Collection (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-2/sonic-heroes-ntsc-u" jotId="wuid:gx:4340ae72ee737817" class="sites-navigation-link">Sonic Heroes (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:6c53f3ccefbbd62" class="sites-navigation-link topLevel">Sitemap</a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="sites-canvas-wrapper">
+                                        <div id="sites-canvas" role="main">
+                                            <div id="goog-ws-editor-toolbar-container"> </div>
+                                            <div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+                                                <A href="/gamecube" dir="ltr">Nintendo GameCube</A>‎ &gt; ‎
+                                            </div>
+                                            <h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+                                                <span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Mario Party 6 (GP6E01)</span>
+                                            </h3>
+                                            <div id="sites-canvas-main" class="sites-canvas-main">
+                                                <div id="sites-canvas-main-content">
+                                                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="sites-layout-tile sites-tile-name-content-1">
+                                                                    <div dir="ltr">
+                                                                        <div><span style="font-family:courier new,monospace">Speedrun Timer</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">04213974 25303264<br />04213978 3A253032<br />0421397C 643A2530<br />04213980 32640000<br />C2005AAC 00000014<br />380000FF 900D0000<br />386001CC 388001A4<br />38A000A0 38C00019<br />38ED0000 3D008000<br />6108C4B0 7D0903A6<br />4E800421 806D889C<br />3C800003 60844BC0<br />7CC323D6 2C060063<br />41800008 38C00063<br />38800E10 38A0003C<br />7CE323D6 7D082BD6<br />1D08003C 7CE83850<br />7D032BD6 7D282BD6<br />1D29003C 7D094050<br />386001CC 388001A4<br />C0228640 3CA08021<br />60A53974 3D208000<br />6129C354 7D2903A6<br />4E800421 38600001<br />60000000 00000000<br />282C0010 EFEF1010<br />042BFF7C 00000000<br />E2000001 80008000</span><br
+                                                                            /><span style="font-family:courier new,monospace"><font face="courier new, monospace"><span style="font-family:courier new,monospace">Displayed in lower right
+ as HH:MM:SS. HH is hours. MM is minutes. SS is seconds. Press Start and Z at the same time to reset the timer.</span></font>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace"><font face="courier new, monospace"><span style="font-family:courier new,monospace"><br /></span></font>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace">All Minigames (Region-Free)<br />F6000002 80008180<br />5460D808 54640FFE<br />7C040050 5400283E<br />14000020 3C80FFFF<br />14000024 6084FFFF<br />E0000000 80008000<br /><br />Disable Most Gecko Codes<br />F6000001 80008180<br />7FC30214 387D012E<br />14000014 38600003<br />14000034 38800003<br />14000040 38600003<br />E0000000 80008000<br />If the code contains a line beginning with 20 or 30 the code will not work with this code enabled.<br /><br />White HUD Colour<br />04011644 380000FF<br />0401164C 380000FF<br />04011654 380000FF<br /><br /></span>
+                                                                            <div><span style="font-family:courier new,monospace">Dark Model Colours (Region-Free)</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">F6000002 80008180</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">D8010048 8081004C</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">98810038 881D000C</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">14000004 38800000</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">14000040 38600000</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">1400007C 38000000</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">E0000000 80008000</span></div>
+                                                                            <div><span style="font-family:courier new,monospace"><br /></span></div>
+                                                                            <div><span style="font-family:courier new,monospace">Bright Model Colours (Region-Free)</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">F6000002 80008180</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">D8010048 8081004C</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">98810038 881D000C</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">14000004 388000FF</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">14000040 386000FF</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">1400007C 380000FF</span></div>
+                                                                            <div><span style="font-family:courier new,monospace">E0000000 80008000</span></div>
+                                                                            <div><span style="font-family:courier new,monospace"><br /></span></div><span style="font-family:courier new,monospace">99 Points Smashdance Player 1<br />204CE768 80C30004<br />C24CDA48 0000000B<br />1DDE0004 39E1FEF8<br />7E0F7214 82100000<br />3DE0804D 39EF5508<br />7E2F7214 82310000<br />3DE08026 39EF5750<br />1DDE0108 7DCF7214<br />89EE0004 2C0F0000<br />40820018 2C100000<br />41820010 39C00063<br />91D0004C 91D10038<br />2C050000 00000000<br />E2000001 80008000<br /><br />Max Stars in Star Bank (Region-Free)<br />F6000001 80008180<br />A063059A 4E800020<br />14000000 3860270F<br />E0000000 80008000<br /><br />Region-Free Button Activator Mastercode<br />C20062F4 00000004<br />2C000000 40820010<br />7DE3022E 3DC08000<br />B1EE4502 7C03022E<br />39C00000 00000000<br /><br />Infinite Time (Region-Free)<br />F6000002 80008180<br />807F0030 801F002C<br />7C030214 901F0030<br />D2000004 00000003<br />801F002C 2C00FFFF<br />40820008 38000000<br />60000000 00000000<br />D2000008 00000004<br />3DC08000 A1CE4502<br />2C0E0010 40820008<br />38600000 7C030214<br />60000000 00000000<br />E0000000 80008000<br />Press Z to disable<br />Requires Region-Free Button Activator Mastercode<br /><br />All Targets Worth 100 Points in Hyper Sniper<br />204CC1E0 A87B0000<br />084CC1E4 38800064<br />20020018 00000000<br />C24D3100 00000002<br />81DF0000 380E0064<br />39C00000 00000000<br />E2000001 80008000<br />Includes Bowser Targets<br /><br />All Stamps Worth 2 Points Stamp by Me<br />204D477C 801F0000<br />044D477C 38000002<br />E2000001 80008000<br /><br />Moon Jump (Region-Free)<br />F6000002 80008180<br />A81F0026 2C000002<br />418205FC 40800014<br />D2000000 00000005<br />A81F0026 3DC08000<br />A1CE4502 2C0E0100<br />4082000C 38000000<br />B01F0026 39C00000<br />60000000 00000000<br />E0000000 80008000<br />Hold A<br />Requires Region-Free Button Activator Mastercode<br /><br />Easy Snowboard Rotation Snow Whirled<br />204CB568 38650001<br />044CB568 38650004<br />E2000001 80008000<br />Press A<br /><br />Gain Coins on Red Spaces (Region-Free)<br />F6000001 80008180<br />7FE3FB78 3880FFFD<br />14000004 38800003<br />E0000000 80008000<br /><br />Load Save to End Board (Region-Free)<br />F6000001 80008180<br />7C040040 40810030<br />14000004 60000000<br />E0000000 80008000<br /><br />No TEV (Region-Free)<br />F6000001 80008180<br />900305AC 4E800020<br />14000008 4E800020<br />E0000000 80008000<br /><br />Displayed Score in Snow Whirled Equals Rotations<br />204CB66C 1C84005A<br />044CB66C 1C840001<br />E2000001 80008000<br /><br />Infinite Rotations Snow Whirled<br />204CB550 40800144<br />044CB550 60000000<br />E2000001 80008000<br />Score Eventually Becomes Negative<br /><br />Sink or Swim Infinite Air<br />204CF1A4 3803FFFF<br />044CF1A4 38000258<br />E2000001 80008000<br /><br />All Items Cost 0 Stars in Star Bank<br />204CE58C 2C00000A<br />044CE574 38000000<br />044CE578 B01B0006<br />044CE57C 4800000C<br />E2000001 80008000<br /><br />Unlock All Miracle Book Pages<br />204CFA38 7C63FA14<br />C24CFA3C 00000002<br />39C00001 99C30000<br />38600001 00000000<br />E2000001 80008000<br />82200001 802663D0<br />86200001 00000002<br />84200001 802663D0<br /><br />Infinite Movement When Walking on Boards (Region-Free)<br />F6000002 80008180<br />8864000A 3803FFFF<br />9804000A 1C9F0108<br />D2000004 00000004<br />3DC08000 A1CE4502<br />2C0E0010 40820008<br />38600000 38030000<br />39C00000 00000000<br />E0000000 80008000<br />Hold Z While Crossing a Space to Disable on Player 1's Controller.<br />Requires Region-Free Button Activator Mastercode.<br /><br />DK/Bowser Infinite Movement Clockwork Castle (Region-Free)<br />F6000002 80008180<br />41820010 8061009C<br />3803FFFF 9001009C<br />D2000008 00000004<br />3DC08000 A9CE4502<br />71CE0010 2C0E0010<br />40820008 38600000<br />38030000 00000000<br />E0000000 80008000<br />Hold Z While Crossing a Space to Disable on Player 1's Controller.<br />Requires Region-Free Button Activator Mastercode.<br /><br />Infinite Movement on Chomps Snowflake Lake<br />204CD250 3AF7FFFF<br />C24CD250 00000004<br />3DC08000 A9CE4502<br />71CE0010 2C0E0010<br />40820008 3AE00000<br />3AF70000 00000000<br />E2000001 80008000<br />Hold Z While Crossing a Space to Disable on Player 1's Controller.<br />Requires Region-Free Button Activator Mastercode.<br /><br />Infinite Bullet Bill Movement (Region-Free)</span></div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">F6000002 80008180</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">8864000A 3803FFFF</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">9804000A 1C9E0108</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">D2000008 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3DC08000 A9CE4502</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">71CE0010 2C0E0010</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 38600000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">9864000A 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E0000000 80008000</font>
+                                                                            </div>
+                                                                            <div><span style="font-family:courier new,monospace;font-size:13.3333px">Hold Z While Crossing a Space to Disable on Player 1's Controller.</span><br style="font-family:courier new,monospace;font-size:13.3333px"
+                                                                                /><span style="font-family:courier new,monospace;font-size:13.3333px">Requires Region-Free Button Activator Mastercode.</span></div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace"><br />Automated Path Decisions (Region-Free)<br />F6000001 80008180<br />41820118 2C170000<br />14000000 60000000<br />E0000000 80008000<br /><br /></font>
+                                                                            </div>
+                                                                            <font face="courier new, monospace">Names Can Exceed 8 Characters</font><br />
+                                                                            <font face="courier new, monospace">204D3DD8 40800250</font><br />
+                                                                            <font face="courier new, monospace">044D3DD8 60000000</font><br />
+                                                                            <font face="courier new, monospace">044D3FB0 4800027C</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br />
+                                                                            <font face="courier new, monospace">Crashes if Too Many Characters are Inserted</font><br /><br />
+                                                                            <font face="courier new, monospace">All Letters Give 3 Points in Catch You Letter</font><br />
+                                                                            <font face="courier new, monospace">204CBD6C 80010028</font><br />
+                                                                            <font face="courier new, monospace">044CBD6C 38000003</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Pop Star Press A to Win</font><br />
+                                                                            <font face="courier new, monospace">204CC7D8 D0040000</font><br />
+                                                                            <font face="courier new, monospace">C24CC7D8 00000002</font><br />
+                                                                            <font face="courier new, monospace">3DC04300 91C40000</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">All Coins Give 5 Points in Cash Flow</font><br />
+                                                                            <font face="courier new, monospace">204F4FB8 8001000C</font><br />
+                                                                            <font face="courier new, monospace">044F4FB8 38000005</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Dust Til Dawn Easy Clean</font><br />
+                                                                            <font face="courier new, monospace">204FCC40 C01F009C</font><br />
+                                                                            <font face="courier new, monospace">044FCC40 C01F008C</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Always Day (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000002 80008180</font><br />
+                                                                            <font face="courier new, monospace">881F0005 7C000774</font><br />
+                                                                            <font face="courier new, monospace">2C00FFFF 408200BC</font><br />
+                                                                            <font face="courier new, monospace">D2000018 00000002</font><br />
+                                                                            <font face="courier new, monospace">38000000 98030010</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Always Night (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000002 80008180</font><br />
+                                                                            <font face="courier new, monospace">881F0005 7C000774</font><br />
+                                                                            <font face="courier new, monospace">2C00FFFF 408200BC</font><br />
+                                                                            <font face="courier new, monospace">D2000018 00000002</font><br />
+                                                                            <font face="courier new, monospace">38000040 98030010</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Pause for Last Turn (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000001 80008180</font><br />
+                                                                            <font face="courier new, monospace">8BA30004 2C1D0063</font><br />
+                                                                            <font face="courier new, monospace">D2000000 00000002</font><br />
+                                                                            <font face="courier new, monospace">8BA30005 9BA30004</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Get Items on Last Turn (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000001 80008180</font><br />
+                                                                            <font face="courier new, monospace">7C040040 4080041C</font><br />
+                                                                            <font face="courier new, monospace">14000004 60000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Free Stars</font><br />
+                                                                            <font face="courier new, monospace">0418333C 2C030000</font><br />
+                                                                            <font face="courier new, monospace">0418342C 2C030000</font><br />
+                                                                            <font face="courier new, monospace">041834C4 2C030000</font><br />
+                                                                            <font face="courier new, monospace">C2183590 00000002</font><br />
+                                                                            <font face="courier new, monospace">38800000 7C8400D0</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">0415F668 2C030000</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">0415FA18 38800000<br />204DAC30 7C641B78</font><br />
+                                                                            <font face="courier new, monospace">044DAC30 388000FF</font><br />
+                                                                            <font face="courier new, monospace">044DB9DC 38800000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Widescreen</font><br /><span style="white-space:pre-wrap;background-color:rgb(255,255,255)"><font face="courier new, monospace" size="2">040183EC 38600001
+C20A17B0 00000002
+C0A29F48 EFA22824
+60000000 00000000
+C20A152C 00000002
+C0029F48 EF620024
+60000000 00000000
+042C30F8 3FCCCCCD
+C202C18C 00000002
+C01F000C C3A29F48
+EC00E824 00000000
+0414E760 C3A30000
+041932E0 388002D0
+042C14B8 3FCCCCCD
+04151324 38600001</font></span></div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace" size="2"><span style="white-space:pre-wrap"><br /></span></font>
+                                                                            <font face="courier new, monospace">Debug Menu</font><br />
+                                                                            <font face="courier new, monospace">0422D9D4 8022D522</font><br />
+                                                                            <font face="courier new, monospace">Start Towering Treetop</font><br /><br />
+                                                                            <font face="courier new, monospace">TTWars</font><br />
+                                                                            <font face="courier new, monospace">0422D9EC 8022D571</font><br />
+                                                                            <font face="courier new, monospace">Start Snowflake Lake</font><br /><br />
+                                                                            <font face="courier new, monospace">No BGM</font><br />
+                                                                            <font face="courier new, monospace">042C02A4 00000001</font><br /><br />
+                                                                            <font face="courier new, monospace">Player 1 Reveives 1000 Points Decathlon Park After Completing a Minigame</font><br />
+                                                                            <font face="courier new, monospace">204D91D8 90640000</font><br />
+                                                                            <font face="courier new, monospace">C24D91D8 00000003</font><br />
+                                                                            <font face="courier new, monospace">2C050000 40820008</font><br />
+                                                                            <font face="courier new, monospace">386003E8 90640000</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Mole It All Moles 3 Points</font><br />
+                                                                            <font face="courier new, monospace">204D57F0 A8A10008</font><br />
+                                                                            <font face="courier new, monospace">044D57F0 38A00003</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Lab Brats Infinite Time</font><br />
+                                                                            <font face="courier new, monospace">204D7574 3803FFFF</font><br />
+                                                                            <font face="courier new, monospace">044D7574 38030000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Skip Safety Screen</font><br />
+                                                                            <font face="courier new, monospace">204CCE7C 3BDE0001</font><br />
+                                                                            <font face="courier new, monospace">044CCE7C 3BC00DB6</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Always MIC as Controller (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000001 80008180</font><br />
+                                                                            <font face="courier new, monospace">88030006 541CDF7E</font><br />
+                                                                            <font face="courier new, monospace">D2000000 00000002</font><br />
+                                                                            <font face="courier new, monospace">3800002E 98030006</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Clockwork Castle</font><br />
+                                                                            <font face="courier new, monospace">82200001 802663D4</font><br />
+                                                                            <font face="courier new, monospace">86200001 00080000</font><br />
+                                                                            <font face="courier new, monospace">84200001 802663D4</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Minigame Modes</font><br />
+                                                                            <font face="courier new, monospace">205095D8 40820010</font><br />
+                                                                            <font face="courier new, monospace">044FE42C 38000001</font><br />
+                                                                            <font face="courier new, monospace">044FE430 B0030000</font><br />
+                                                                            <font face="courier new, monospace">044FE434 4800005C</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Magma Flow</font><br />
+                                                                            <font face="courier new, monospace">82200001 802663D4</font><br />
+                                                                            <font face="courier new, monospace">86200001 00100000</font><br />
+                                                                            <font face="courier new, monospace">84200001 802663D4</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Endurance Alley</font><br />
+                                                                            <font face="courier new, monospace">82200001 802663D0</font><br />
+                                                                            <font face="courier new, monospace">86200001 00000080</font><br />
+                                                                            <font face="courier new, monospace">84200001 802663D0</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Harder Difficulty Solo Mode</font><br />
+                                                                            <font face="courier new, monospace">82200001 802663D0</font><br />
+                                                                            <font face="courier new, monospace">86200001 00000010</font><br />
+                                                                            <font face="courier new, monospace">84200001 802663D0</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Everything (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000001 80008180</font><br />
+                                                                            <font face="courier new, monospace">80A405A8 38800001</font><br />
+                                                                            <font face="courier new, monospace">14000000 38A0FFFF</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                            <font face="courier new, monospace">F6000001 80008180</font><br />
+                                                                            <font face="courier new, monospace">80A405A0 38800001</font><br />
+                                                                            <font face="courier new, monospace">14000000 38A0FFFF</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Brutal Difficulty</font><br />
+                                                                            <font face="courier new, monospace">82200001 802663D0</font><br />
+                                                                            <font face="courier new, monospace">86200001 00000008</font><br />
+                                                                            <font face="courier new, monospace">84200001 802663D0</font><br /><br />
+                                                                            <font face="courier new, monospace">Star Sprint Gain More Speed</font><br />
+                                                                            <font face="courier new, monospace">204F1D78 4182028C</font><br />
+                                                                            <font face="courier new, monospace">044F1D74 2C000005</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Verbal Assault One Hit Kill</font><br />
+                                                                            <font face="courier new, monospace">204DC1D8 408000B8</font><br />
+                                                                            <font face="courier new, monospace">044DC1D8 480000B8</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Skip Intro</font><br />
+                                                                            <font face="courier new, monospace">204CDC74 386003E8</font><br />
+                                                                            <font face="courier new, monospace">044CDC34 48000038</font><br />
+                                                                            <font face="courier new, monospace">044CDC4C 48000020</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Autopress Start on Title Screen</font><br />
+                                                                            <font face="courier new, monospace">204CC980 41820078</font><br />
+                                                                            <font face="courier new, monospace">044CC980 60000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Auto Advance Textboxes (Region-Free)</font><br />
+                                                                            <font face="courier new, monospace">F6000002 80008180</font><br />
+                                                                            <font face="courier new, monospace">A81F01A0 7C001838</font><br />
+                                                                            <font face="courier new, monospace">28000000 41820128</font><br />
+                                                                            <font face="courier new, monospace">1400000C 60000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Autopress Start on Minigame Explanation Screen</font><br />
+                                                                            <font face="courier new, monospace">204CB434 41820018</font><br />
+                                                                            <font face="courier new, monospace">044CB434 60000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">New Game Board Modifier Party Mode</font><br /></div><span style="font-family:courier new,monospace">48000000 804CA084<br /></span>
+                                                                        <div><span style="font-family:courier new,monospace">DE000000 80008180<br />300009CC A8030004<br />D20009CC 00000002<br />3800000X B0030004<br />60000000 00000000<br />E0000000 80008000<br />0-Towering Treetop<br />1-E.Gadd's Garage<br />2-Faire Square<br />3-Snowflake Lake<br />4-Castaway Bay<br />5-Clockwork Castle<br /><br />New Game Number of Turns Modifer Party Mode<br />48000000 </span>
+                                                                            <span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">804CA084<br /></span>DE000000 80008180<br />30000968 3865000A<br />14000968 386000XX<br
+                                                                            />E0000000 80008000<br />XX-Decimal Numbers Converted to Hex.<br /><br />Disable Bonuses Party Mode<br />48000000 </span><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">804CA084<br /></span></span>DE000000
+                                                                            80008180
+                                                                            <br />300008D4 A803000A<br /></span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace">140008D4 38000001<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">E0000000 80008000<br /><br />Party Mode Star Handicap Modifers<br />48000000 </span><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">804CA084<br /></span></span>
+                                                                            </span>DE000000 80008180<br />30000BD0 A803000C<br />D2000BD0 00000007<br />2C1F0000 40820008<br />38000WWW 2C1F0001<br />40820008 38000XXX<br />2C1F0002 40820008<br />38000YYY 2C1F0003<br
+                                                                            />40820008 38000ZZZ<br />60000000 00000000<br />E0000000 80008000<br />WWW-Player 1<br />XXX-Player 2<br />YYY-Player 3<br />ZZZ-Player 4<br />Values are Decimal Numbers Converted
+                                                                            to Hex.<br /><br />Difficulty Modifer Solo Mode<br /></span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace">48000000 804CA084<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">DE000000 80008180<br />30000BF8 A8A50004<br />14000BF8 38A0000X<br />E0000000 80008000<br />0-Easy<br />1-Normal<br />2-Hard<br />3-Harder<br /><br />Board Modifer Solo Mode<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">48000000 804CA084<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">DE000000 80008180<br />30000BCC A8630002<br />D2000BCC 00000002<br />39C0000X B1C30002<br />A8630002 00000000<br />E0000000 80008000<br />0-Thirsty Gulch<br />1-Astro Avenue<br />2-Infernal Tower<br /><br />Course Modifer Star Sprint<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">48000000 804CA084<br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">DE000000 80008180<br />3001CE3C A8630004<br />D201CE3C 00000002<br />39C0000X B1C30004<br />A8630004 00000000<br />E0000000 80008000<br />0-Meadow Road<br />1-Dark Path<br />2-Magma Flow<br /><br />Max Score Speak Up P1<br />204FAD94 3803003C<br />C24FAD98 00000003<br />2C1F0000 4082000C<br />3BC003E7 7FC4032E<br />7FC402AE 00000000<br />E2000001 80008000<br /><br />View Always Clear Speak Up<br />20505B38 48007569<br />04505B20 4E800020<br />E2000001 80008000<br /><br />Enable Same Space Duel Mode (Region-Free)<br />F6000002 80008180<br />2C030000 41820048<br />7FE3FB78 1CBF0108<br />14000004 60000000<br />E0000000 80008000<br /><br />Enable 1-Player Speak Up<br />48000000 804D0C1C<br />DE000000 80008180<br />3001DFCC 4181021C<br />1401DFCC 4800021C<br />1401E658 38800002<br />E2000001 80008000<br /><br />Ride Chomps in Snowflake Lake for Free<br />204CC45C 2C030014<br />044CC45C 2C030000<br />044CC7A4 38800000<br />E2000001 80008000<br /><br />P1 Always Rolls 10<br />C21865D0 00000007<br />3DC08026 89EE5B7A<br />2C0F00FF 40820024<br />61CE5750 7DCF7214<br />89CE0004 2C0E0000<br />40820010 81DE001C<br />380EFFFF 48000008<br />7C0302AE 00000000<br />C21865FC 00000006<br />3DC08026 89EE5B7A<br />1DEF0108 61CE5750<br />7DCF7214 89CE0004<br />2C0E0000 40820008<br />38600008 38030001<br />60000000 00000000<br /><br />CPUs Always Roll 1<br />C2186600 00000006<br />3DC08026 89EE5B7A<br />1DEF0108 61CE5750<br />7DCF7214 89CE0000<br />71CE0020 2C0E0000<br />41820008 38000000<br />B01D0054 00000000<br />C21865D4 00000007<br />3DC08026 89EE5B7A<br />2C0F00FF 40820020<br />61CE5750 7DCF7214<br />89CE0000 71CE0020<br />2C0E0000 40820008<br />38000000 B01D0054<br />60000000 00000000<br /><br />Use Whomp Shortcuts without 10 Coins (Region-Free)<br />F6000001 80008180<br />4080002C 386003A0<br />14000000 4800002C<br />140000C0 38800000<br />E0000000 80008000<br /><br />Can Always Bet 99 Coins into Duel (Region-Free)<br />F6000001 80008180<br />7C771B78 3C601000<br />14000000 3AE00063<br />140003A0 48000014<br />E0000000 80008000<br /><br />Do not Lose Coins for Betting into Duel (Region-Free)<br />F6000001 80008180<br />7C9C00D0 57A3103A<br />14000000 38800000<br />E0000000 80008000<br /><br />999 Coins Player 1 (Region-Free)<br />F6000001 80008180<br />A8640030 4E800020<br />D2000000 00000004<br />88040004 2C000000<br />4082000C 386003E7<br />B0640030 A8640030<br />60000000 00000000<br />E0000000 80008000<br /><br />999 Stars Player 1 (Region-Free)<br />F6000001 80008180<br />A8640030 4E800020<br />D2000000 00000004<br />88040004 2C000000<br />4082000C 386003E7<br />B0640030 A8640030<br />60000000 00000000<br />E0000000 80008000<br /><br />Nobody Has Orbs (Region-Free)<br />F6000001 80008180<br />3BC50005 887E0000<br />D2000004 00000002<br />386000FF 987E0000<br />60000000 00000000<br />E0000000 80008000<br /><br />Free Items From Shops (Region-Free)<br />F6000001 80008180<br />2C17FFFE 41820198<br />14000018 38000000<br />14000800 38000000<br />14000994 38000000<br />E0000000 80008000<br />F6000002 80008180<br />809D0004 7C041800<br />40810044 38600000<br />14000000 38800000<br />14000244 60000000<br />E0000000 80008000<br /><br />CPUs Have No Coins or Stars (Region-Free)<br />F6000002 80008180<br />4E800020 4E800020<br />4E800020 1CA30108<br />D2000020 00000004<br />88040004 2C000000<br />41820010 38600000<br />9064001C 90640030<br />4E800020 00000000<br />E0000000 80008000</span></div>
+                                                                        <div><span style="font-family:courier new,monospace"><br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">Improved Item RNG</span></div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C219A630 00000026</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">9421FFF0 7C0802A6</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">90010014 93E10000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">7C7F1B78 38600034</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3C808014 6084D348</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">7C8903A6 4E800421</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C030008 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600007 2C030009</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 38600007</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C03000E 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3860000D 2C030012</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 38600011</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C030013 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600011 2C03001A</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 38600019</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C03001B 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600019 2C03001C</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 38600019</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C03001D 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600019 2C030020</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 3860001F</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C030021 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3860001F 2C030022</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 3860001F</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C030023 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3860001F 2C030024</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 3860001F</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C030025 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3860001F 2C030026</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 3860001F</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C030027 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3860001F 2C03002D</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 3860002C</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">7C641B78 7FE3FB78</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3FE08015 63FFDCCC</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">7FE903A6 4E800421</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">83E10000 80010014</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">7C0803A6 38210010</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">4E800020 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">Must use the </font><span style="font-family:courier new,monospace;font-size:13.3333px;background-color:transparent">Region-Free Player Code Enabler code enabled.</span></div>
+                                                                            <div><br /></div>
+                                                                            <div style="font-size:13.3333px">
+                                                                                <font face="courier new, monospace">Region-Free Player Code Enabler</font><br />
+                                                                                <font face="courier new, monospace">F6000002 80008180</font><br />
+                                                                                <font face="courier new, monospace">83E1000C 38210010</font><br />
+                                                                                <font face="courier new, monospace">4E800020 1CA30108</font><br />
+                                                                                <font face="courier new, monospace">D2000018 00000003</font><br />
+                                                                                <font face="courier new, monospace">3DC0817F 7C802A14</font><br />
+                                                                                <font face="courier new, monospace">88640004 1C630004</font><br />
+                                                                                <font face="courier new, monospace">7C8E192E 00000000</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">F6000001 80008180</font>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">48004C05 7C7D1B78</font>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">D2000004 00000003</font>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">2C03FFFE 40820008</font>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">3860FFFD 7C7D1B78</font>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">60000000 00000000</font>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <font face="courier new, monospace">E0000000 80008000</font>
+                                                                                </div>
+                                                                                <div style="font-size:13.3333px"><br /></div>
+                                                                                <font face="courier new, monospace">Region-Free Player Codes</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 1 has Debug Orbs</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0000</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 00000032</font><br />
+                                                                                <font face="courier new, monospace">10000006 00000033</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 2 has Debug Orbs</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0004</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 00000032</font><br />
+                                                                                <font face="courier new, monospace">10000006 00000033</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 3 has Debug Orbs</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0008</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 00000032</font><br />
+                                                                                <font face="courier new, monospace">10000006 00000033</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 4 has Debug Orbs</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F000C</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 00000032</font><br />
+                                                                                <font face="courier new, monospace">10000006 00000033</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Orb Modifier Values</font><br />
+                                                                                <font face="courier new, monospace">00 - Mushroom Orb</font><br />
+                                                                                <font face="courier new, monospace">01 - Super 'Shroom Orb</font><br />
+                                                                                <font face="courier new, monospace">02 - Sluggish 'Shroom Orb</font><br />
+                                                                                <font face="courier new, monospace">03 - Metal Mushroom Orb</font><br />
+                                                                                <font face="courier new, monospace">04 - Bullet Bill Orb</font><br />
+                                                                                <font face="courier new, monospace">05 - Warp Pipe Orb</font><br />
+                                                                                <font face="courier new, monospace">06 - Flutter Orb</font><br />
+                                                                                <font face="courier new, monospace">07 - Cursed Mushroom Orb</font><br />
+                                                                                <font face="courier new, monospace">0A - Spiny Orb</font><br />
+                                                                                <font face="courier new, monospace">0B - Goomba Orb</font><br />
+                                                                                <font face="courier new, monospace">0C - Piranha Plant Orb</font><br />
+                                                                                <font face="courier new, monospace">0D - Klepto Orb</font><br />
+                                                                                <font face="courier new, monospace">0F - Toady Orb</font><br />
+                                                                                <font face="courier new, monospace">10 - Kamek Orb</font><br />
+                                                                                <font face="courier new, monospace">11 - Mr. Blizzard Orb</font><br />
+                                                                                <font face="courier new, monospace">14 - Podoboo Orb</font><br />
+                                                                                <font face="courier new, monospace">15 - Zap Orb</font><br />
+                                                                                <font face="courier new, monospace">16 - Tweester Orb</font><br />
+                                                                                <font face="courier new, monospace">17 - Thwomp Orb</font><br />
+                                                                                <font face="courier new, monospace">18 - Bob-omb Orb</font><br />
+                                                                                <font face="courier new, monospace">19 - Paratroopa Orb</font><br />
+                                                                                <font face="courier new, monospace">1E - Snack Orb</font><br />
+                                                                                <font face="courier new, monospace">1F - Boo-away Orb</font>
+                                                                            </div>
+                                                                            <div style="font-size:13.3333px"><span style="font-family:courier new,monospace">28 - </span><span style="white-space:pre;background-color:rgb(249,249,249)"><font face="courier new, monospace" size="2">Bullet Bill Move Event</font></span></div>
+                                                                            <div style="font-size:13.3333px"><span style="font-family:courier new,monospace"><font size="2"><span style="white-space:pre">29 - </span></font>
+                                                                                </span><span style="white-space:pre;background-color:rgb(249,249,249)"><font face="courier new, monospace" size="2">Duel Event</font></span></div>
+                                                                            <div style="font-size:13.3333px"><span style="font-family:courier new,monospace"><font size="2"><span style="white-space:pre">2A - </span></font>
+                                                                                </span><span style="white-space:pre;background-color:rgb(249,249,249)"><font face="courier new, monospace" size="2">Miracle Event</font></span></div>
+                                                                            <div style="font-size:13.3333px"><span style="font-family:courier new,monospace"><font size="2"><span style="white-space:pre">2B - </span></font>
+                                                                                </span><span style="white-space:pre;background-color:rgb(249,249,249)"><font face="courier new, monospace" size="2">Bowser Event</font></span></div>
+                                                                            <div style="font-size:13.3333px"><span style="font-family:courier new,monospace"><font size="2"><span style="white-space:pre">2C - </span></font>
+                                                                                </span>
+                                                                                <font face="courier new, monospace">
+                                                                                    <font size="2"><span style="white-space:pre;background-color:rgb(249,249,249)">Donkey Kong Event</span></font>
+                                                                                </font>
+                                                                            </div>
+                                                                            <div style="font-size:13.3333px">
+                                                                                <font face="courier new, monospace">
+                                                                                    <font size="2"><span style="white-space:pre">2E - </span></font>
+                                                                                </font><span style="white-space:pre;background-color:rgb(249,249,249)"><font face="courier new, monospace" size="2">Red Boo Event</font></span>
+                                                                                <font face="courier new, monospace">
+                                                                                    <font size="2"><span style="white-space:pre"><br /></span></font>2F - Dice Block</font><br />
+                                                                                <font face="courier new, monospace">30 - Call It Quits</font><br />
+                                                                                <font face="courier new, monospace">32 - Debug Cam Test Orb</font><br />
+                                                                                <font face="courier new, monospace">33 - Debug Warp Test Orb</font><br />
+                                                                                <font face="courier new, monospace">34 - Debug Decision Test Orb</font><br />
+                                                                                <font face="courier new, monospace">FF - Empty Slot</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 1 Orb Modifier</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0000</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 000000xx</font><br />
+                                                                                <font face="courier new, monospace">10000006 000000yy</font><br />
+                                                                                <font face="courier new, monospace">10000007 000000zz</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                                <font face="courier new, monospace">xx -  Orb in Slot 1</font><br />
+                                                                                <font face="courier new, monospace">yy - Orb in Slot 2</font><br />
+                                                                                <font face="courier new, monospace">zz - Orb in Slot 3</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 2 Orb Modifier</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0004</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 000000xx</font><br />
+                                                                                <font face="courier new, monospace">10000006 000000yy</font><br />
+                                                                                <font face="courier new, monospace">10000007 000000zz</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                                <font face="courier new, monospace">xx -  Orb in Slot 1</font><br />
+                                                                                <font face="courier new, monospace">yy - Orb in Slot 2</font><br />
+                                                                                <font face="courier new, monospace">zz - Orb in Slot 3</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 3 Orb Modifier</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0008</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 000000xx</font><br />
+                                                                                <font face="courier new, monospace">10000006 000000yy</font><br />
+                                                                                <font face="courier new, monospace">10000007 000000zz</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                                <font face="courier new, monospace">xx -  Orb in Slot 1</font><br />
+                                                                                <font face="courier new, monospace">yy - Orb in Slot 2</font><br />
+                                                                                <font face="courier new, monospace">zz - Orb in Slot 3</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 4 Orb Modifier</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F000C</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">10000005 000000xx</font><br />
+                                                                                <font face="courier new, monospace">10000006 000000yy</font><br />
+                                                                                <font face="courier new, monospace">10000007 000000zz</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                                <font face="courier new, monospace">xx -  Orb in Slot 1</font><br />
+                                                                                <font face="courier new, monospace">yy - Orb in Slot 2</font><br />
+                                                                                <font face="courier new, monospace">zz - Orb in Slot 3</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 1 999 Coins</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0000</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 1 No Coins or Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0000</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 00000000</font><br />
+                                                                                <font face="courier new, monospace">12000030 00000000</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 1 999 Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0000</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">12000030 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 2 999 Coins</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0004</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 2 No Coins or Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0004</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 00000000</font><br />
+                                                                                <font face="courier new, monospace">12000030 00000000</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 2 999 Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0004</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">12000030 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 3 999 Coins</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0008</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 3 No Coins or Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0008</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 00000000</font><br />
+                                                                                <font face="courier new, monospace">12000030 00000000</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 3 999 Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F0008</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">12000030 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 4 999 Coins</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F000C</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 4 No Coins or Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F000C</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">1200001C 00000000</font><br />
+                                                                                <font face="courier new, monospace">12000030 00000000</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                                <font face="courier new, monospace">Player 4 999 Stars</font><br />
+                                                                                <font face="courier new, monospace">48000000 817F000C</font><br />
+                                                                                <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                                <font face="courier new, monospace">12000030 000003E7</font><br />
+                                                                                <font face="courier new, monospace">E0000000 80008000</font>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div id="sites-canvas-bottom-panel">
+                                                <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+                                                <div id="sites-attachments-container">
+                                                </div>
+                                                <a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+                                                <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments">
+                                                    <div class="sites-comment-docos-wrapper">
+                                                        <div class="sites-comment-docos">
+                                                            <div class="sites-comment-docos-background"></div>
+                                                            <div class="sites-comment-docos-header">
+                                                                <div class="sites-comment-docos-header-title">Comments</div>
+                                                            </div>
+                                                            <div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sites-chrome-footer-wrapper">
+                        <div id="sites-chrome-footer-wrapper-inside">
+                            <div id="sites-chrome-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sites-chrome-adminfooter-container">
+                <div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation">
+                    <p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/gamecube/mario-party-6-gp6e01&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span>
+                        <a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="https://sites.google.com/system/app/pages/reportAbuse" target="_blank">Report Abuse</a>
+                        <span aria-hidden="true">|</span>
+                        <a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('sjl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/b9fbb7/system/js/jot_min_view__en.js"></script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('jl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        sites.Searchbox.initialize(
+            'sites-searchbox-search-button', {
+                "object": []
+            }['object'],
+            'search-site', {
+                "label": "Configure search options...",
+                "url": "/system/app/pages/admin/settings"
+            });
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        JOT_setupNav("2bd", "Navigation", true);
+        JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvNTASKwweofkreudcqcuC1YNkTIUvbvhjReDep9Eauyudgrn8pjwEOxZmIGd6mrcHNiOFcWytJcsN2TJ9CROLY0czqke7nHTR3cSthO3GbRql4liaNyPCurWymw87KgQ_-t3Im6CFA6FFJK0UIt5Jeid5-XA/api/js?anon=true',
+            false, false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        setTimeout(function() {
+            var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+            gsites.Xhr.send('https://sites.google.com/_/tz', null, null, 'GET', null, null, {
+                afjstz: fingerprint
+            });
+        }, 500);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml">
+        window.onload = function() {
+            if (false) {
+                JOT_setMobilePreview();
+            }
+            var loadTimer = window.jstiming.load;
+            loadTimer.tick("ol");
+            loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+            window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+        }
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+            webspace, "en");
+        maestroRunner.initListeners();
+        maestroRunner.installEditRender();
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        //<![CDATA[
+        // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+        if (webspace.user.hasWriteAccess) {
+            JOT_decorateButtons();
+        }
+
+        // Fires delayed events.
+        (function() {
+            JOT_fullyLoaded = true;
+            var delayedEvents = JOT_delayedEvents;
+            for (var x = 0; x < delayedEvents.length; x++) {
+                var event = delayedEvents[x];
+                JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+            }
+            JOT_delayedEvents = null;
+            JOT_postEvent('pageLoaded');
+        })();
+        //]]>
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_postEvent('decorateGvizCharts');
+    </script>
+    <script type="text/javascript">
+        JOT_setupPostRenderingManager();
+    </script>
+    <script type="text/javascript">
+        JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+    </script>
+    <script type="text/javascript">
+        sites.codeembed.init();
+    </script>
+    <div id="server-timer-div" style="display:none"> </div>
+    <script type="text/javascript">
+        window.jstiming.load.tick('render');
+        JOT_postEvent('usercontentrendered', this);
+    </script>
+</body>
+
+</html>

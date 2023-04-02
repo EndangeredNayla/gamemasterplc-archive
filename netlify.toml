@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "*/"
+  to = "*/index.html"
+  status = 200
+  
+[[redirects]]
+  from = "https://sites.google.com/"
+  to = "https://gamemasterplc-archive.naylahanegan.com/"
+  status = 301
+  force=true
+  

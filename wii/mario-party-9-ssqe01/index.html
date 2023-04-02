@@ -1,0 +1,1237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+            (function() {
+                function e(g) {
+                    this.t = {};
+                    this.tick = function(h, k, f) {
+                        this.t[h] = [void 0 != f ? f : (new Date).getTime(), k];
+                        if (void 0 == f) try {
+                            window.console.timeStamp("CSI/" + h)
+                        } catch (m) {}
+                    };
+                    this.getStartTickTime = function() {
+                        return this.t.start[0]
+                    };
+                    this.tick("start", null, g)
+                }
+                var a;
+                if (window.performance) var d = (a = window.performance.timing) && a.responseStart;
+                var l = 0 < d ? new e(d) : new e;
+                window.jstiming = {
+                    Timer: e,
+                    load: l
+                };
+                if (a) {
+                    var b = a.navigationStart;
+                    0 < b && d >= b && (window.jstiming.srt = d - b)
+                }
+                if (a) {
+                    var c = window.jstiming.load;
+                    0 < b && d >=
+                        b && (c.tick("_wtsrt", void 0, b), c.tick("wtsrt_", "_wtsrt", d), c.tick("tbsd_", "wtsrt_"))
+                }
+                try {
+                    a = null, window.chrome && window.chrome.csi && (a = Math.floor(window.chrome.csi().pageT), c && 0 < b && (c.tick("_tbnd", void 0, window.chrome.csi().startE), c.tick("tbnd_", "_tbnd", b))), null == a && window.gtbExternal && (a = window.gtbExternal.pageT()), null == a && window.external && (a = window.external.pageT, c && 0 < b && (c.tick("_tbnd", void 0, window.external.startE), c.tick("tbnd_", "_tbnd", b))), a && (window.jstiming.pt = a)
+                } catch (g) {}
+            })();
+        })()
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="//www.google.com/images/icons/product/sites-16.ico" />
+    <link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/613cd8/system/app/images/apple-touch-icon.png" type="image/png" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            function d(a) {
+                return document.getElementById(a)
+            }
+            window.byId = d;
+
+            function g(a) {
+                return a.replace(/^\s+|\s+$/g, "")
+            }
+            window.trim = g;
+            var h = [],
+                k = 0;
+            window.JOT_addListener = function(a, b, c) {
+                var f = new String(k++);
+                a = {
+                    eventName: a,
+                    handler: b,
+                    compId: c,
+                    key: f
+                };
+                h.push(a);
+                return f
+            };
+            window.JOT_removeListenerByKey = function(a) {
+                for (var b = 0; b < h.length; b++)
+                    if (h[b].key == a) {
+                        h.splice(b, 1);
+                        break
+                    }
+            };
+            window.JOT_removeAllListenersForName = function(a) {
+                for (var b = 0; b < h.length; b++) h[b].eventName == a && h.splice(b, 1)
+            };
+            window.JOT_postEvent = function(a, b, c) {
+                var f = {
+                    eventName: a,
+                    eventSrc: b || {},
+                    payload: c || {}
+                };
+                if (window.JOT_fullyLoaded)
+                    for (b = h.length, c = 0; c < b && c < h.length; c++) {
+                        var e = h[c];
+                        e && e.eventName == a && (f.listenerCompId = e.compId || "", (e = "function" == typeof e.handler ? e.handler : window[e.handler]) && e(f))
+                    } else window.JOT_delayedEvents.push({
+                        eventName: a,
+                        eventSrc: b,
+                        payload: c
+                    })
+            };
+            window.JOT_delayedEvents = [];
+            window.JOT_fullyLoaded = !1;
+            window.JOT_formatRelativeToNow = function(a, b) {
+                a = ((new Date).getTime() - a) / 6E4;
+                if (1440 <= a || 0 > a) return null;
+                var c = 0;
+                60 <= a && (a /= 60, c = 2);
+                2 <= a && c++;
+                return b ? window.JOT_siteRelTimeStrs[c].replace("__duration__", Math.floor(a)) : window.JOT_userRelTimeStrs[c].replace("__duration__", Math.floor(a))
+            };
+        })()
+    </script>
+    <script>
+        var breadcrumbs = [{
+            "path": "/wii",
+            "deleted": false,
+            "title": "Nintendo Wii",
+            "dir": "ltr"
+        }, {
+            "path": "/wii/mario-party-9-ssqe01",
+            "deleted": false,
+            "title": "Mario Party 9 (SSQE01)",
+            "dir": "ltr"
+        }];
+        var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/613cd8/system/app/images/cleardot.gif';
+
+
+        var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+
+
+
+
+
+
+        var webspace = {
+            "gvizGstaticVersion": "current",
+            "enableAnalytics": false,
+            "pageSharingId": "jotspot_page",
+            "codeembeds": {
+                "outerIframeSrc": "https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html",
+                "innerIframeSrc": "https://172621112-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"
+            },
+            "enableUniversalAnalytics": false,
+            "sharingPolicy": "OPENED",
+            "siteTitle": "gamemasterplc's cheat codes",
+            "experiments": {
+                "overrideDisableDomainEditing": false,
+                "disableDomainEditing": true
+            },
+            "jot2atari": {
+                "eligibility": "INELIGIBLE"
+            },
+            "onepickUrl": "https://docs.google.com/picker",
+            "adsensePublisherId": null,
+            "features": {
+                "moreMobileStyleImprovements": null,
+                "subscriptionDataMigrationInProgress": null,
+                "plusBadge": false
+            },
+            "configProperties": {
+                "disableSiteEditing": null
+            },
+            "isPublic": true,
+            "newSitesBaseUrl": "https://sites.google.com",
+            "isConsumer": true,
+            "serverFlags": {
+                "jot2AtariLearnMoreUrl": "https://support.google.com/sites/answer/7035197"
+            },
+            "domainAnalyticsAccountId": "",
+            "plusPageId": "",
+            "signInUrl": "https://accounts.google.com/AccountChooser?continue=https://gamemasterplc-archive.naylahanegan.com/wii/mario-party-9-ssqe01&service=jotspot",
+            "analyticsAccountId": "",
+            "scottyUrl": "/_/upload",
+            "homePath": "/",
+            "siteNoticeUrlEnabled": null,
+            "plusPageUrl": "",
+            "adsensePromoClickedOrSiteIneligible": true,
+            "csiReportUri": "https://gg.google.com/csi",
+            "sharingId": "jotspot",
+            "termsUrl": "//www.google.com/intl/en/policies/terms/",
+            "gvizVersion": 1,
+            "editorResources": {
+                "sitelayout": ["https://ssl.gstatic.com/sites/p/613cd8/system/app/css/sitelayouteditor.css"],
+                "text": ["https://ssl.gstatic.com/sites/p/613cd8/system/js/codemirror.js", "https://ssl.gstatic.com/sites/p/613cd8/system/app/css/codemirror_css.css", "https://ssl.gstatic.com/sites/p/613cd8/system/js/trog_edit__en.js", "https://ssl.gstatic.com/sites/p/613cd8/system/app/css/trogedit.css", "/_/rsrc/1663832320000/system/app/css/editor.css", "https://ssl.gstatic.com/sites/p/613cd8/system/app/css/codeeditor.css", "/_/rsrc/1663832320000/system/app/css/camelot/editor-jfk.css"]
+            },
+            "sharingUrlPrefix": "/_/sharing",
+            "isAdsenseEnabled": true,
+            "domain": "defaultdomain",
+            "baseUri": "/",
+            "name": "gamemasterplcscheatcodes",
+            "siteTemplateId": false,
+            "siteNoticeRevision": null,
+            "siteNoticeUrlAddress": null,
+            "siteNoticeMessage": null,
+            "page": {
+                "isRtlLocale": false,
+                "canDeleteWebspace": null,
+                "isPageDraft": null,
+                "parentPath": "/wii",
+                "parentWuid": "wuid:gx:7012bd522bd7c7ac",
+                "siteLocale": "en",
+                "timeZone": "America/Los_Angeles",
+                "type": "text",
+                "title": "Mario Party 9 (SSQE01)",
+                "locale": "en",
+                "wuid": "wuid:gx:26f4ce4437b95959",
+                "revision": 21,
+                "path": "/wii/mario-party-9-ssqe01",
+                "isSiteRtlLocale": false,
+                "pageInheritsPermissions": null,
+                "name": "mario-party-9-ssqe01",
+                "canChangePath": true,
+                "state": "",
+                "properties": {},
+                "bidiEnabled": false,
+                "currentTemplate": {
+                    "path": "/system/app/pagetemplates/text",
+                    "title": "Web Page"
+                }
+            },
+            "canPublishScriptToAnyone": true,
+            "user": {
+                "keyboardShortcuts": true,
+                "sessionIndex": "",
+                "guest_": true,
+                "displayNameOrEmail": "guest",
+                "userName": "guest",
+                "uid": "",
+                "renderMobile": false,
+                "domain": "",
+                "namespace": "",
+                "hasWriteAccess": false,
+                "namespaceUser": false,
+                "primaryEmail": "guest",
+                "hasAdminAccess": false,
+                "isGoogleAdmin": false
+            },
+            "gadgets": {
+                "baseUri": "/system/app/pages/gadgets"
+            }
+        };
+        webspace.page.breadcrumbs = breadcrumbs;
+
+
+        var JOT_siteRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+    </script>
+    <script type="text/javascript">
+        window.jstiming.load.tick('scl');
+    </script>
+    <meta name="title" content="Mario Party 9 (SSQE01) - gamemasterplc's cheat codes" />
+    <meta itemprop="name" content="Mario Party 9 (SSQE01) - gamemasterplc's cheat codes" />
+    <meta property="og:title" content="Mario Party 9 (SSQE01) - gamemasterplc's cheat codes" />
+    <meta name="description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <meta itemprop="description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <meta id="meta-tag-description" property="og:description" content="Cheat Codes for N64, PS1, GameCube, PS2, Wii, and Nintendo DS games." />
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/613cd8/system/app/themes/default/standard-css-default-ltr-ltr.css" />
+    <link rel="stylesheet" type="text/css" href="/_/rsrc/1663832320000/system/app/css/overlay.css?cb=default150goog-ws-leftnone30themedefaultstandard" />
+    <link rel="stylesheet" type="text/css" href="/_/rsrc/1663832320000/system/app/css/camelot/allthemes-view.css" />
+    <!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+    <title>Mario Party 9 (SSQE01) - gamemasterplc's cheat codes</title>
+
+    <div class="battle-for-libaries">
+        <a href="https://www.battleforlibraries.com/" ?><b>❗</b> This site is archived by EndangeredNayla. Mirrored on April 1st 2023 from a February 2023 backup.<b>❗</b></a></a>
+    </div>
+
+    <style>
+        .battle-for-libaries {
+            background-color: #0af176;
+            overflow: hidden;
+        }
+        /* Style the links inside the navigation bar */
+        
+        .battle-for-libaries a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.jstiming.load.tick('cl');
+    </script>
+</head>
+
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+    <div id="sites-page-toolbar" class="sites-header-divider">
+        <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;">
+            <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div>
+        </div>
+    </div>
+    <div id="sites-chrome-everything-scrollbar">
+        <div id="sites-chrome-everything" class="">
+            <div id="sites-chrome-page-wrapper" style="direction: ltr">
+                <div id="sites-chrome-page-wrapper-inside">
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+                        <table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+                            <tr class="sites-header-primary-row" id="sites-chrome-userheader">
+                                <td id="sites-header-title" class="" role="banner">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <h2><a href="https://gamemasterplc-archive.naylahanegan.com/" dir="ltr" id="sites-chrome-userheader-title">gamemasterplc's cheat codes</a></h2>
+                                    </div>
+                                </td>
+                                <td class="sites-layout-searchbox  ">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" />
+                                            <div id="sites-searchbox-button-set" class="goog-inline-block">
+                                                <div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+                                <td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="sites-chrome-main-wrapper">
+                        <div id="sites-chrome-main-wrapper-inside">
+                            <table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+                                <tr>
+                                    <td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation">
+                                            <div class="sites-embed-content sites-sidebar-nav">
+                                                <ul role="navigation" jotId="navList" class="has-expander">
+                                                    <li class="topLevel nav-first ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="/home" jotId="wuid:gx:6939b6521e98137f" class="sites-navigation-link topLevel">Home</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7aea457ca7351438">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/nintendo-64" jotId="wuid:gx:7aea457ca7351438" class="sites-navigation-link topLevel">Nintendo 64</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-ntsc-j" jotId="wuid:gx:19ef26b8e4e5ef0" class="sites-navigation-link">Mario Party (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party" jotId="wuid:gx:2b345c5f47fa1237" class="sites-navigation-link">Mario Party (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-pal" jotId="wuid:gx:58ff2eef094b8d3a" class="sites-navigation-link">Mario Party (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2-ntsc-j" jotId="wuid:gx:27b610996cc1efac" class="sites-navigation-link">Mario Party 2 (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2" jotId="wuid:gx:78ebd597892ebd18" class="sites-navigation-link">Mario Party 2 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-2-pal" jotId="wuid:gx:20c1f2af5cd58611" class="sites-navigation-link">Mario Party 2 (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3-1" jotId="wuid:gx:2fba3a6a362fceb4" class="sites-navigation-link">Mario Party 3 (NTSC-J)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3" jotId="wuid:gx:742074824241cf85" class="sites-navigation-link">Mario Party 3 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/mario-party-3-pal" jotId="wuid:gx:76fcf1032d2506e3" class="sites-navigation-link">Mario Party 3 (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/paper-mario-ntsc-u" jotId="wuid:gx:f9d89eed713fbbf" class="sites-navigation-link">Paper Mario (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/pokemon-stadium-ntsc-u" jotId="wuid:gx:c6058d4c49f82b4" class="sites-navigation-link">Pokemon Stadium (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/super-mario-64-ntsc-u" jotId="wuid:gx:66ebb0d0a24eba83" class="sites-navigation-link">Super Mario 64 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/super-smash-bros-ntsc-u" jotId="wuid:gx:6f4880385202f92f" class="sites-navigation-link">Super Smash Bros (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-64/the-legend-of-zelda-ocarina-of-time-1-2-ntsc" jotId="wuid:gx:5274f6b71c227bf1" class="sites-navigation-link">The Legend of Zelda Ocarina of Time (1.2 NTSC)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:66cf8369a41bf37d">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/nintendo-ds" jotId="wuid:gx:66cf8369a41bf37d" class="sites-navigation-link topLevel">Nintendo DS</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/bomberman-land-touch-ntsc-u" jotId="wuid:gx:16c69b75df743612" class="sites-navigation-link">Bomberman Land Touch (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/bomberman-land-touch-2-ntsc-u" jotId="wuid:gx:15192635b788f3f6" class="sites-navigation-link">Bomberman Land Touch 2 (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-and-sonic-at-the-olympic-games-ntsc-u" jotId="wuid:gx:3f6167c1c741a57e" class="sites-navigation-link">Mario and Sonic at the Olympic Games (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-kart-ds-ntsc-u-pal" jotId="wuid:gx:16ef37efae90cba3" class="sites-navigation-link">Mario Kart DS (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-party-ds-ntsc-u" jotId="wuid:gx:1c8d8bcc328f2ce9" class="sites-navigation-link">Mario Party DS (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/mario-party-ds-pal" jotId="wuid:gx:7d1c761efbe739e3" class="sites-navigation-link">Mario Party DS (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/sonic-rush-adventure-ntsc-u" jotId="wuid:gx:70922470b1e2aff0" class="sites-navigation-link">Sonic Rush Adventure (NTSC-U)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/super-mario-64-ds-pal" jotId="wuid:gx:7ecc45a14274e2b7" class="sites-navigation-link">Super Mario 64 DS (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/nintendo-ds/super-monkey-ball-touch-and-roll-ntsc-u" jotId="wuid:gx:546838db19b824b7" class="sites-navigation-link">Super Monkey Ball Touch and Roll (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:22da14cd8835627">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/gamecube" jotId="wuid:gx:22da14cd8835627" class="sites-navigation-link topLevel">Nintendo GameCube</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/dance-dance-revolution-mario-mix-gwze01" jotId="wuid:gx:44db319b32e6f5a1" class="sites-navigation-link">Dance Dance Revolution Mario Mix (GWZE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/f-zero-gx-gfze01" jotId="wuid:gx:2438805c332037b6" class="sites-navigation-link">F-Zero GX (GFZE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/hot-wheels-world-race-ghre78" jotId="wuid:gx:22883aef70a0a172" class="sites-navigation-link">Hot Wheels World Race (GHRE78)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/kirby-air-ride-gkye01" jotId="wuid:gx:5c9e61402779433" class="sites-navigation-link">Kirby Air Ride (GKYE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-4-gmpe01" jotId="wuid:gx:2b6e743ca44e9338" class="sites-navigation-link">Mario Party 4 (GMPE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-5-gp5e01" jotId="wuid:gx:6557bee485bc4162" class="sites-navigation-link">Mario Party 5 (GP5E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-5-gp5p01" jotId="wuid:gx:3db5a57e91857288" class="sites-navigation-link">Mario Party 5 (GP5P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6-gp6e01" jotId="wuid:gx:857fbb086f598e8" class="sites-navigation-link">Mario Party 6 (GP6E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6" jotId="wuid:gx:40f3d8bc9f55e396" class="sites-navigation-link">Mario Party 6 (GP6J01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-6-gp6p01" jotId="wuid:gx:41a55e46a8e1fd2b" class="sites-navigation-link">Mario Party 6 (GP6P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-7-gp7e01" jotId="wuid:gx:42f385f7e18fe398" class="sites-navigation-link">Mario Party 7 (GP7E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-party-7-gp7p01" jotId="wuid:gx:2206a083c8082c6c" class="sites-navigation-link">Mario Party 7 (GP7P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/mario-power-tennis-gome01" jotId="wuid:gx:90c95477a5044c" class="sites-navigation-link">Mario Power Tennis (GOME01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/pc-genjin-gp4j18" jotId="wuid:gx:6dfe5808acaf683a" class="sites-navigation-link">PC Genjin (GP4J18)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/skies-of-arcadia-legends-ntsc-u" jotId="wuid:gx:37b0bb6de4c05cea" class="sites-navigation-link">Skies of Arcadia Legends (GEAE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-adventure-2-battle-gsne8p" jotId="wuid:gx:5a51cdc69ab67d7f" class="sites-navigation-link">Sonic Adventure 2 Battle (GSNE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-adventure-dx-director-s-cut-ntsc-u" jotId="wuid:gx:2636b44dfe06966b" class="sites-navigation-link">Sonic Adventure DX Director's Cut (GXSE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/sonic-heroes-g9se8p" jotId="wuid:gx:61f642895a4406d" class="sites-navigation-link">Sonic Heroes (G9SE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/spongebob-squarepants-battle-for-bikini-botton-gqpe78" jotId="wuid:gx:3f8290be0aea8486" class="sites-navigation-link">SpongeBob SquarePants: Battle for Bikini Bottom (GQPE78)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/super-mario-sunshine-ntsc-u" jotId="wuid:gx:77a535a32bc19e6f" class="sites-navigation-link">Super Mario Sunshine (GMSE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/tales-of-symphonia-gqseaf" jotId="wuid:gx:2604b18f4c68a1d3" class="sites-navigation-link">Tales of Symphonia (GQSEAF)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/the-legend-of-zelda-the-wind-waker-gzle01" jotId="wuid:gx:628bf33e7e6b85bf" class="sites-navigation-link">The Legend of Zelda The Wind Waker (GZLE01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/gamecube/wario-ware-inc-mega-party-games-gzwe01" jotId="wuid:gx:8c966e29a3c149" class="sites-navigation-link">Wario Ware Inc Mega Party Games (GZWE01)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7012bd522bd7c7ac">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/wii" jotId="wuid:gx:7012bd522bd7c7ac" class="sites-navigation-link topLevel">Nintendo Wii</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/calling-scae18" jotId="wuid:gx:192c65413923fd4b" class="sites-navigation-link">Calling (SCAE18)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-and-sonic-at-the-olympic-winter-games-role8p" jotId="wuid:gx:76bf374ca75b4bab" class="sites-navigation-link">Mario and Sonic at the Olympic Winter Games (ROLE8P)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8e01" jotId="wuid:gx:151dbda2c6755e48" class="sites-navigation-link">Mario Party 8 (RM8E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8j01" jotId="wuid:gx:19d72b70348b1752" class="sites-navigation-link">Mario Party 8 (RM8J01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/mario-party-8-rm8p01" jotId="wuid:gx:1070f6de169d49c5" class="sites-navigation-link">Mario Party 8 (RM8P01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="current-bg" jotId="wuid:gx:26f4ce4437b95959" dir="ltr" style="padding-left: 38px;">Mario Party 9 (SSQE01)</div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-64-dlc-naae" jotId="wuid:gx:606f6d0b0104c129" class="sites-navigation-link">Super Mario 64 (DLC) (NAAE)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-galaxy-2-sb4e01" jotId="wuid:gx:222f58352403052f" class="sites-navigation-link">Super Mario Galaxy 2 (SB4E01)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/super-mario-world-dlc-jaae" jotId="wuid:gx:37d2004609a323b" class="sites-navigation-link">Super Mario World (DLC) (JAAE)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/wii/the-legend-of-zelda-majora-s-mask-dlc-nare" jotId="wuid:gx:3ca86aee3bd469f4" class="sites-navigation-link">The Legend of Zelda Majora's Mask (DLC) (NARE)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7dc09108fd6260e6">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/playstation-1" jotId="wuid:gx:7dc09108fd6260e6" class="sites-navigation-link topLevel">Playstation 1</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-1/bomberman-fantasy-race-ntsc-u" jotId="wuid:gx:456f06c9cf1e2a4f" class="sites-navigation-link">Bomberman Fantasy Race NTSC-U</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-1/spyro-the-dragon-ntsc-u" jotId="wuid:gx:69dfc28a4d38b2d" class="sites-navigation-link">Spyro the Dragon (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:19ed278724731e20">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="/playstation-2" jotId="wuid:gx:19ed278724731e20" class="sites-navigation-link topLevel">Playstation 2</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-2/sonic-gems-collection-pal" jotId="wuid:gx:475f45f10cf34350" class="sites-navigation-link">Sonic Gems Collection (PAL)</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="/playstation-2/sonic-heroes-ntsc-u" jotId="wuid:gx:4340ae72ee737817" class="sites-navigation-link">Sonic Heroes (NTSC-U)</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:64600d86afe0c722" class="sites-navigation-link topLevel">Sitemap</a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="sites-canvas-wrapper">
+                                        <div id="sites-canvas" role="main">
+                                            <div id="goog-ws-editor-toolbar-container"> </div>
+                                            <div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+                                                <A href="/wii" dir="ltr">Nintendo Wii</A>‎ &gt; ‎
+                                            </div>
+                                            <h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+                                                <span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Mario Party 9 (SSQE01)</span>
+                                            </h3>
+                                            <div id="sites-canvas-main" class="sites-canvas-main">
+                                                <div id="sites-canvas-main-content">
+                                                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="sites-layout-tile sites-tile-name-content-1">
+                                                                    <div dir="ltr">
+                                                                        <div>
+                                                                            <font face="courier new, monospace">Disable Most Gecko Codes</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C204DED4 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3C809000 7C032000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">4080000C 3C630010</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3FFFFFF0 7FE4FB78</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">60000000 00000000</font>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">Will work on any Gecko Code that doesn't have the message </font><span style="font-family:courier new,monospace;font-size:13.3333px;background-color:transparent">Does not work on PAL.</span></div>
+                                                                        <div><span style="font-family:courier new,monospace;font-size:13.3333px;background-color:transparent"><br /></span></div>
+                                                                        <div><span style="font-family:courier new,monospace">Always Play Board Modifier<br />48000000 80369220<br />DE000000 80008180<br />3000</span><span style="background-color:transparent"><font face="courier new, monospace">8148</font></span>
+                                                                            <span style="font-family:courier new,monospace;background-color:transparent;font-size:10pt"> 8063000C</span>
+                                                                        </div>
+                                                                        <div><span style="font-family:courier new,monospace">1400</span><span style="background-color:transparent"><font face="courier new, monospace">8148</font></span><span style="font-family:courier new,monospace;background-color:transparent;font-size:10pt"> 3860000X</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">E2000001 80008000</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">X Values</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">0-Toad Road</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">1-Bob-omb Factory</span></div>
+                                                                        <div><span style="font-family:courier new,monospace">2-Boo's Horror Castle</span></div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3-Blooper Beach</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">4-Magma Mine</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">5-Bowser's Station</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">6-DK's Jungle Ruins</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace"><br />Always Roll Highest Possible Dice Roll P1<br />204DD508 39000000<br />C24DD4EC 00000006<br />3C608037 80632058<br />80E30008 1CE70004<br />38E70018 7CE3382E<br />2C070000
+                                                                                    40820008
+                                                                                    <br />3805FFFF 981E00C8<br />981E00C8 00000000<br />E2000001 80008000<br />204DCDD8 39000000<br />C24DCDBC 00000006<br />3C608037 80631E98<br />80E30008 1CE70004<br />38E70018
+                                                                                    7CE3382E
+                                                                                    <br />2C070000 40820008<br />3805FFFF 981E00C8<br />981E00C8 00000000<br />E2000001 80008000<br />20503438 39000000<br />C250341C 00000006<br />3C608037 80632218
+                                                                                    <br />80E30008 1CE70004<br />38E70018 7CE3382E<br />2C070000 40820008<br />3805FFFF 981E00C8<br />981E00C8 00000000<br />E2000001 80008000<br />204F0CB8 39000000<br />C24F0C9C
+                                                                                    00000006
+                                                                                    <br />3C608037 80631E50<br />80E30008 1CE70004<br />38E70018 7CE3382E<br />2C070000 40820008<br />3805FFFF 981E00C8<br />981E00C8 00000000<br />E2000001 80008000
+                                                                                    <br />204E5788 39000000<br />C24E576C 00000006<br />3C608037 80631FC0<br />80E30008 1CE70004<br />38E70018 7CE3382E<br />2C070000 40820008<br />3805FFFF 981E00C8<br />981E00C8
+                                                                                    00000000
+                                                                                    <br />E2000001 80008000<br />2050B9C8 39000000<br />C250B9AC 00000006<br />3C608037 80631E98<br />80E30008 1CE70004<br />38E70018 7CE3382E<br />2C070000 40820008
+                                                                                    <br />3805FFFF 981E00C8<br />981E00C8 00000000<br />E2000001 80008000<br />205082D8 39000000<br />C25082BC 00000006<br />3C608037 80632560<br />80E30008 1CE70004<br />38E70018
+                                                                                    7CE3382E
+                                                                                    <br />2C070000 40820008<br />3805FFFF 981E00C8<br />981E00C8 00000000<br />E2000001 80008000<br /><br /></font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">Infinite Movement on Boards</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2046F04C 40820058</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C246F054 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3C808030 A884B40A</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">70841000 2C041000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 38600000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">60000000 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">204520E0 38600000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C2452108 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600000 3C808030</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">A884B40A 70841000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C041000 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600063 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">204583CC 38000001</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C24583C4 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">3C608030 A863B40A</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">70631000 2C031000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">40820008 3A800000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">60000000 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">20483C40 3A000001</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C2483C4C 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600000 3C808030</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">A884B40A 70841000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C041000 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600063 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">20468258 3B800001</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C2468264 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600000 3C808030</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">A884B40A 70841000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C041000 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600063 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2047FDA8 2C030000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C247FDB0 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600000 3C808030</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">A884B40A 70841000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C041000 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600063 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">204985CC 3B200001</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">C24985D8 00000004</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600000 3C808030</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">A884B40A 70841000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">2C041000 40820008</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">38600063 00000000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E2000001 80008000</font>
+                                                                            </div>
+                                                                            <font face="courier new, monospace">Hold Minus while crossing a space on Player 1's Controller to Deactivate.</font><br /><br />
+                                                                            <font face="courier new, monospace">P1 Item Modifier</font><br />
+                                                                            <font face="courier new, monospace">48000000 8175B600</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">140035F0 XXXXXXXX</font><br />
+                                                                            <font face="courier new, monospace">140035F4 YYYYYYYY</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /></span>XXXXXXXX-1st Item<br
+                                                                            />YYYYYYYY-2nd Item<br />00000001-1 to 3 Dice Block<br />00000002-4 to 6 Dice Block<br />00000003-0 to 1 Dice Block<br />00000004-1 to 10 Dice Block<br />00000005-Slow Dice Block<br
+                                                                            />FFFFFFFF-Nothing<br /><br />P2 Item Modifier<br />48000000 8175B600<br />DE000000 80008180<br />1400372C XXXXXXXX<br />14003730 YYYYYYYY<br />E0000000 80008000</span><br />
+                                                                            <span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /></span>XXXXXXXX-1st Item<br />YYYYYYYY-2nd Item<br />00000001-1
+                                                                            to 3 Dice Block<br />00000002-4 to 6 Dice Block<br />00000003-0 to 1 Dice Block<br />00000004-1 to 10 Dice Block<br />00000005-Slow Dice Block<br />FFFFFFFF-Nothing<br /><br />P3
+                                                                            Item Modifier<br />48000000 8175B600<br />DE000000 80008180<br />14003868 XXXXXXXX<br />1400386C YYYYYYYY<br />E0000000 80008000</span><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /></span>XXXXXXXX-1st
+                                                                            Item
+                                                                            <br />YYYYYYYY-2nd Item<br />00000001-1 to 3 Dice Block<br />00000002-4 to 6 Dice Block<br />00000003-0 to 1 Dice Block<br />00000004-1 to 10 Dice Block<br />00000005-Slow Dice
+                                                                            Block
+                                                                            <br />FFFFFFFF-Nothing<br /><br />P4 Item Modifier<br />48000000 8175B600<br />DE000000 80008180<br />140039A4 XXXXXXXX<br />140039A8 YYYYYYYY<br />E0000000 80008000<br />XXXXXXXX-1st
+                                                                            Item
+                                                                            <br />YYYYYYYY-2nd Item</span><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /></span>00000001-1
+                                                                            to 3 Dice Block<br />00000002-4 to 6 Dice Block<br />00000003-0 to 1 Dice Block<br />00000004-1 to 10 Dice Block<br />00000005-Slow Dice Block<br />FFFFFFFF-Nothing<br /><br />Mini
+                                                                            Star Group Size Modifier<br />204C74A0 418201C8<br />C24C74CC 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ
+                                                                            2C030000
+                                                                            <br />60000000 00000000<br />E2000001 80008000<br />204C6BE0 418201C8<br />C24C6C0C 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY
+                                                                            <br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001 80008000<br />204ED470 418201C8<br />C24ED49C 00000006<br />2C030003 40820008<br />386000XX
+                                                                            2C030005
+                                                                            <br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001 80008000<br />204DAC80 418201C8<br />C24DACAC 00000006
+                                                                            <br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001 80008000<br />204CF530
+                                                                            418201C8
+                                                                            <br />C24CF55C 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000
+                                                                            <br />E2000001 80008000<br />204F5CF0 418201C8<br />C24F5D1C 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ
+                                                                            2C030000
+                                                                            <br />60000000 00000000<br />E2000001 80008000<br />XX-Group of 3<br />YY-Group of 5<br />ZZ-Group of 10<br /><br />Mini Ztar Group Size Modifier<br />204C74A0 418201C8
+                                                                            <br />C24C7568 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001
+                                                                            80008000
+                                                                            <br />204C6BE0 418201C8<br />C24C6CA8 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000
+                                                                            <br />60000000 00000000<br />E2000001 80008000<br />204ED470 418201C8<br />C24ED538 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A
+                                                                            40820008
+                                                                            <br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001 80008000<br />204DAC80 418201C8<br />C24DAD48 00000006<br />2C030003 40820008<br />386000XX 2C030005
+                                                                            <br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001 80008000<br />204CF530 418201C8<br />C24CF5F8 00000006<br />2C030003
+                                                                            40820008
+                                                                            <br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001 80008000<br />204F5CF0 418201C8
+                                                                            <br />C24F5DB8 00000006<br />2C030003 40820008<br />386000XX 2C030005<br />40820008 386000YY<br />2C03000A 40820008<br />386000ZZ 2C030000<br />60000000 00000000<br />E2000001
+                                                                            80008000
+                                                                            <br />XX-Group of 3<br />YY-Group of 5<br />ZZ-Group of 10<br /><br />DK Jungle Ruins Banana Worth Modifier</span>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">2044B3AC 3863CA70</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">045BCA70 WWWWWWWW</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">045BCA74 XXXXXXXX</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">045BCA78 YYYYYYYY</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">045BCA7C ZZZZZZZZ</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">E2000001 80008000</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">WWWWWWWW-Banana</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">XXXXXXXX-Banana Bunch</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">YYYYYYYY-Z-Banana</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">ZZZZZZZZ-Z-Banana Bunch</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace"><br />Magma Mine No Heatwave</font><br />
+                                                                            <font face="courier new, monospace">204501C8 4E800020</font><br />
+                                                                            <font face="courier new, monospace">0444FEB0 4E800020</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Infinite Ministars P1</font><br />
+                                                                            <font face="courier new, monospace">48000000 8175B600</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">14003554 000003E7</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /><br /></span>CPUs No Ministars<br
+                                                                            />48000000 8175B600<br />DE000000 80008180<br />18003690 00000000<br />2002013C 00000000<br />E0000000 80008000</span><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /><br /></span>CPU's
+                                                                            Always Master<br />48000000 803695A4<br />DE000000 80008180<br />F40026D0 027FAE02<br />39800004 918309D0<br />806309D0 00000000<br />E0000000 80008000<br /><br />Infinite Party
+                                                                            Points
+                                                                            <br />F2391C4C 027FAE02<br />3980270F 918306C0<br />806306C0 00000000<br /> <br />All Items in Museum Free<br />20375FC8 4E800421<br />C2375FC0 00000002<br />38C00000 90C40008<br
+                                                                            />38800000 00000000<br />E2000001 80008000<br /><br />Everything Purchased from Museum<br />20391B60 3C608027<br />04391B8C 38600001<br />E2000001 80008000<br /><br />Enable 1
+                                                                            Vs Rivals Minigames With 2 Players</span>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">20372424 38000002</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">04372414 60000000</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">E2000001 80008000</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace"><br />Mute Sound Effects</font><br /></div><span style="font-family:courier new,monospace">0407CD10 4E800020<br /><br /></span>
+                                                                        <div><span style="font-family:courier new,monospace">All Bosses Unlocked<br />2036E9FC 4800DA95<br />0437C4EC 380000FF<br />E2000001 80008000<br /><br />Max Score P1 Buddy Bounce<br />F237BE48 02901C03<br />2C1B0001 4082000C<br />38000063 90030A48<br />80030A48 00000000<br /><br />Infinite Score P1 Tuber Tug<br />2036D53C 38030001<br />057515F4 00000063<br />E2000001 80008000<br /></span>
+                                                                            <span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /><br /></span>Max Score P1 Pit or Platter<br />20399908
+                                                                            801C0018
+                                                                            <br />0574EF74 000003E7<br />057270D8 000003E7
+                                                                            <br />E2000001 80008000<br /></span><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /><br /></span>Max
+                                                                            Score P1 Pianta Pool<br />203A64B8 4BE65B39<br />057261F8 00000063<br />0571F990 00000063<br />E2000001 80008000</span><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.<br /><br />Max Score P1 Bumper Bubbles</span></span>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">2036DDC4 7FC4F378</font>
+                                                                        </div>
+                                                                        <div>
+                                                                            <font face="courier new, monospace">
+                                                                                <div>C236DDC0 00000003</div>
+                                                                                <div>2C1E0000 4082000C</div>
+                                                                                <div>38A00063 90A401DC</div>
+                                                                                <div>80A401DC 00000000</div>
+                                                                                <div>E2000001 80008000</div>
+                                                                                <div><br /></div>
+                                                                                <div>Invinicible Bumper Bubbles (All Players)</div>
+                                                                                <div>203698D0 38610044</div>
+                                                                                <div>043698CC 60000000</div>
+                                                                                <div>E2000001 80008000</div>
+                                                                                <div><br /></div>Press First Button to Win Peak Precision</font><br />
+                                                                            <font face="courier new, monospace">2036F9F8 38030001</font><br />
+                                                                            <font face="courier new, monospace">0436F9F8 38000017</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">P1 Infinite Score Sock it to Lakitu</font><br />
+                                                                            <font face="courier new, monospace">2037FD80 80830A14</font><br />
+                                                                            <font face="courier new, monospace">C237FD80 00000003</font><br />
+                                                                            <font face="courier new, monospace">2C180000 4082000C</font><br />
+                                                                            <font face="courier new, monospace">38800063 90830A14</font><br />
+                                                                            <font face="courier new, monospace">80830A14 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">P1 Infinite Score Piranha Patch</font><br />
+                                                                            <font face="courier new, monospace">203797B4 7CA5F02E</font><br />
+                                                                            <font face="courier new, monospace">C23797B4 00000003</font><br />
+                                                                            <font face="courier new, monospace">2C1E0000 4082000C</font><br />
+                                                                            <font face="courier new, monospace">39800063 7D85F12E</font><br />
+                                                                            <font face="courier new, monospace">7CA5F02E 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">P1 Infinite Score Whomp Stomp</font><br />
+                                                                            <font face="courier new, monospace">20377F80 80630000</font><br />
+                                                                            <font face="courier new, monospace">C2377F80 00000003</font><br />
+                                                                            <font face="courier new, monospace">2C040000 4082000C</font><br />
+                                                                            <font face="courier new, monospace">39800063 91830000</font><br />
+                                                                            <font face="courier new, monospace">80630000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">OHKO Sock it to Lakitu</font><br />
+                                                                            <font face="courier new, monospace">203724E8 3403FFFD</font><br />
+                                                                            <font face="courier new, monospace">043724E8 38000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">OHKO Whomp Stomp</font><br />
+                                                                            <font face="courier new, monospace">2036C858 80030000</font><br />
+                                                                            <font face="courier new, monospace">0436C858 38000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Moon Jump Sand Trap</font><br />
+                                                                            <font face="courier new, monospace">20399730 C01F0630</font><br />
+                                                                            <font face="courier new, monospace">C2399730 00000005</font><br />
+                                                                            <font face="courier new, monospace">3D80802F 618CB40A</font><br />
+                                                                            <font face="courier new, monospace">A18C0000 718C0100</font><br />
+                                                                            <font face="courier new, monospace">4182000C 3D804350</font><br />
+                                                                            <font face="courier new, monospace">919F0630 C01F0630</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">C23997B0 00000004</font><br />
+                                                                            <font face="courier new, monospace">3D80802F 618CB40A</font><br />
+                                                                            <font face="courier new, monospace">A18C0000 718C0100</font><br />
+                                                                            <font face="courier new, monospace">40820008 D01F0630</font><br />
+                                                                            <font face="courier new, monospace">60000000 00000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                            <font face="courier new, monospace">Press the 2 Button on P1's Controller</font><br /><br />
+                                                                            <font face="courier new, monospace">OHKO Bumper Sparks</font><br />
+                                                                            <font face="courier new, monospace">2036E684 3803FFFF</font><br />
+                                                                            <font face="courier new, monospace">0436E684 38000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Bowser Pop All Emblems</font><br />
+                                                                            <font face="courier new, monospace">2036A200 3803FFFF</font><br />
+                                                                            <font face="courier new, monospace">0436A200 38000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Cheep Cheep Shot OHKO</font><br />
+                                                                            <font face="courier new, monospace">F236C0F4 02BF5E03</font><br />
+                                                                            <font face="courier new, monospace">80030014 2C000001</font><br />
+                                                                            <font face="courier new, monospace">4182000C 38000001</font><br />
+                                                                            <font face="courier new, monospace">90030014 00000000</font><br /><br />
+                                                                            <font face="courier new, monospace">Cheep Cheep Shot Infinite Score P1</font><br />
+                                                                            <font face="courier new, monospace">F239BBBC 02670404</font><br />
+                                                                            <font face="courier new, monospace">3D808173 618CD400</font><br />
+                                                                            <font face="courier new, monospace">7C0C1800 4082000C</font><br />
+                                                                            <font face="courier new, monospace">39800063 91830018</font><br />
+                                                                            <font face="courier new, monospace">80830018 00000000</font><br /><br />
+                                                                            <font face="courier new, monospace">Max Score Fungi Frenzy</font><br />
+                                                                            <font face="courier new, monospace">2036F880 38A30001</font><br />
+                                                                            <font face="courier new, monospace">056F8718 00000063</font><br />
+                                                                            <font face="courier new, monospace">056F8DA4 00000063</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Does not work on PAL.</span><br /><br />Max Score
+                                                                            On Gain Choice Challenge P1<br />20452E44 7C609214<br />C2452E40 00000003<br />2C130000 40820008<br />386003E7 7C641B78<br />60000000 00000000<br />E2000001 80008000<br /><br
+                                                                            />P1 Max Score After Gain High Rollers<br />20451AE4 380003E7<br />C2451AC4 00000003<br />2C1C0000 4182000C<br />7C05CA14 48000008<br />380003E7 00000000<br />E2000001 80008000<br
+                                                                            /><br />Infinite Spaces Remaining High Rollers<br />2046D1EC 38800004<br />0446D1BC 38030000<br />C246D1C0 00000004<br />3C608030 A863B40A<br />70631000 2C031000<br />40820008
+                                                                            38000000
+                                                                            <br />901F0000 00000000<br />E2000001 80008000<br />Hold Minus on Player 1's Controller Right Before You Make a Move and Make a Move to End Your Turn.<br /><br />Always Get Bonus
+                                                                            Objective Flinger Painting<br />20370904 281B000A<br />04370904 281B7FFF<br />E2000001 80008000<br /><br />Finish in 1 Shot in Time Trials Flinger Painting<br />20376ED0 2803005A
+                                                                            <br />04376ED0 28030000<br />043708FC 28030000<br />E2000001 80008000<br /><br />Freeze Time Time Trials Flinger Painting<br />20376E70 38630001<br />04376E70 38630000<br />E2000001
+                                                                            80008000
+                                                                            <br /><br />Pit or Platter Freeze Timer in Time Trials<br />203761F8 90030294<br />043761D4 60000000<br />E2000001 80008000<br /><br />Pizza Me Mario Freeze Time in Time Trials
+                                                                            <br />20373A6C 90030294<br />04373A6C 60000000<br />E2000001 80008000<br /><br />Upward Mobility Freeze Time in Time Trials<br />2036D890 D03F043C<br />0436D890 60000000
+                                                                            <br />E2000001 80008000<br /><br />Always Get Bonus Objective Ballistic Beach<br />2037954C 38630001<br />0437954C 38630000<br />E2000001 80008000<br /><br />Freeze Time Time
+                                                                            Trials Ballistic Beach<br />2037DD10 90030288<br />0437DD10 60000000<br />E2000001 80008000<br /><br />Instant Win in Time Trials Ballistic Beach<br />20371F30 2C000005<br />04371F30
+                                                                            2C000000
+                                                                            <br />E2000001 80008000<br /><br />Win Upon Hitting 1 Target Ballistic Beach<br />2037ECC0 38000001<br />0437ECE0 7C030378<br />E2000001 80008000<br /><br />Snow Go 1 Lap
+                                                                            <br />2037BC34 38040001<br />0437BC34 38030001<br />E2000001 80008000<br /><br />Snow Go Freeze Time<br />203762E4 907B028C<br />043762E4 60000000<br />E2000001 80008000<br /><br
+                                                                            />Peak Precision Freeze Time<br />203719B8 9003000C<br />043719B8 60000000<br />E2000001 80008000<br /><br />Freeze Time Chain Event<br />2036FC00 901E0298<br />0436FC00 60000000
+                                                                            <br />E2000001 80008000<br /><br />Chain Event Infinite Mercy Invinicibility<br />2039ACB4 2C000000<br />C23A5C6C 00000002<br />3C603F80 90630750<br />C0430750 00000000<br />E2000001
+                                                                            80008000
+                                                                            <br /><br />Freeze Time Speeding Bullets<br />2038938C 80030000<br />0438938C 38600000<br />E2000001 80008000<br /><br />P1 Infinite Score DK's Banana Bonus<br />2037412C 80A509C0
+                                                                            <br />C237412C 00000003<br />2C1D0000 4082000C<br />39800063 918509C0<br />80A509C0 00000000<br />E0000000 80008000<br /><br />Jigsaw Jumble Freeze Timer<br />2036D8DC D00F028C
+                                                                            <br />0436D8DC 60000000<br />E0000000 80008000<br /><br />Bowser's Block Battle OHKO<br />F2369A70 022C1403<br />80030018 2C000001<br />4182000C 38000001<br />90030018 00000000
+                                                                            <br /><br />Infinite Time<br />C21D7794 00000007<br />3DC08177 81EEFB20<br />820F0048 3DC08000<br />7C107040 41800018<br />3DC08180 7C107040<br />4080000C 81D0023C<br />91C24000
+                                                                            4E800020
+                                                                            <br />60000000 00000000<br />48000000 8027AEA0<br />DE000000 80008180<br />30000030 FFFFFFFF<br />14000030 00000000<br />E0000000 80008000<br />282FB40A EFFF1000<br />48000000
+                                                                            8027AEA0
+                                                                            <br />DE000000 80008180<br />3400002C 00000001<br />1400002C 00000000<br />E0000000 80008000<br /></span><span style="font-family:courier new,monospace">Does not work on PAL. </span>
+                                                                            <font face="courier new, monospace">Works in All Minigames. Hold Minus Until the Timer Says Zero to End the Timer.</font><br /><br />
+                                                                            <font face="courier new, monospace">21:9</font><br />
+                                                                            <font face="courier new, monospace">0426DAB0 40155555</font><br />
+                                                                            <font face="courier new, monospace">0426DAB4 3F100000</font><br />
+                                                                            <font face="courier new, monospace">04170024 60000000</font><br /><br />
+                                                                            <font face="courier new, monospace">Skyjinks Infinite Health</font><br />
+                                                                            <font face="courier new, monospace">20393630 90830018</font><br />
+                                                                            <font face="courier new, monospace">04393630 60000000</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Remove Graphical Effects</font><br />
+                                                                            <font face="courier new, monospace">04041E14 60000000</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock All Boards</font><br />
+                                                                            <div>
+                                                                                <font face="courier new, monospace">48000000 8026E2A8</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">DE000000 80008180</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">100006D2 00000001</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E0000000 80008000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">48000000 80369220</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">DE000000 80008180</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">30024C5C 2C030000</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">14024C58 38600001</font>
+                                                                            </div>
+                                                                            <div>
+                                                                                <font face="courier new, monospace">E0000000 80008000</font>
+                                                                            </div><br />
+                                                                            <font face="courier new, monospace">Unlock All Characters</font><br />
+                                                                            <font face="courier new, monospace">48000000 80369220</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">3000FF6C 2C030000</font><br />
+                                                                            <font face="courier new, monospace">1400FF70 4800013C</font><br />
+                                                                            <font face="courier new, monospace">140100C4 4800013C</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Master Difficulty</font><br />
+                                                                            <font face="courier new, monospace">48000000 80369220</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">300373D0 2C030000</font><br />
+                                                                            <font face="courier new, monospace">140373D4 480000A4</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Unlock Boss Rush</font><br />
+                                                                            <font face="courier new, monospace">48000000 80369220</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">3002266C 2C030000</font><br />
+                                                                            <font face="courier new, monospace">14022670 48000188</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Jackpot Minigame Never Starts Bowser's Station</font><br />
+                                                                            <font face="courier new, monospace">20482880 2C000014</font><br />
+                                                                            <font face="courier new, monospace">04482880 2C00007F</font><br />
+                                                                            <font face="courier new, monospace">E2000001 80008000</font><br /><br />
+                                                                            <font face="courier new, monospace">Start Board with Ministars Modifier P1-4</font><br />
+                                                                            <font face="courier new, monospace">48000000 803695A4</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">30002E40 93E309E8</font><br />
+                                                                            <font face="courier new, monospace">14002E40 60000000</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                            <font face="courier new, monospace">48000000 8026E2A8</font><br />
+                                                                            <font face="courier new, monospace">DE000000 80008180</font><br />
+                                                                            <font face="courier new, monospace">140009E8 00000WWW</font><br />
+                                                                            <font face="courier new, monospace">14000A10 00000XXX</font><br />
+                                                                            <font face="courier new, monospace">14000A38 00000YYY</font><br />
+                                                                            <font face="courier new, monospace">14000A60 00000ZZZ</font><br />
+                                                                            <font face="courier new, monospace">E0000000 80008000</font><br />
+                                                                            <font face="courier new, monospace">WWW-Player 1</font><br />
+                                                                            <font face="courier new, monospace">XXX-Player 2</font><br />
+                                                                            <font face="courier new, monospace">YYY-Player 3</font><br />
+                                                                            <font face="courier new, monospace">ZZZ-Player 4</font><br />
+                                                                            <font face="courier new, monospace">Values are decimal numbers converted to hex.</font><br />
+                                                                            <font face="courier new, monospace">Do not use values above 99 or it will cause display issues when setting Handicaps.</font><br /></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div id="sites-canvas-bottom-panel">
+                                                <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+                                                <div id="sites-attachments-container">
+                                                </div>
+                                                <a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+                                                <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments">
+                                                    <div class="sites-comment-docos-wrapper">
+                                                        <div class="sites-comment-docos">
+                                                            <div class="sites-comment-docos-background"></div>
+                                                            <div class="sites-comment-docos-header">
+                                                                <div class="sites-comment-docos-header-title">Comments</div>
+                                                            </div>
+                                                            <div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sites-chrome-footer-wrapper">
+                        <div id="sites-chrome-footer-wrapper-inside">
+                            <div id="sites-chrome-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sites-chrome-adminfooter-container">
+                <div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation">
+                    <p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://gamemasterplc-archive.naylahanegan.com/wii/mario-party-9-ssqe01&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span>
+                        <a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="https://gamemasterplc-archive.naylahanegan.com/system/app/pages/reportAbuse"
+                            target="_blank">Report Abuse</a><span aria-hidden="true">|</span>
+                        <a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('sjl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/613cd8/system/js/jot_min_view__en.js"></script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('jl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        sites.Searchbox.initialize(
+            'sites-searchbox-search-button', {
+                "object": []
+            }['object'],
+            'search-site', {
+                "label": "Configure search options...",
+                "url": "/system/app/pages/admin/settings"
+            });
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        JOT_setupNav("2bd", "Navigation", true);
+        JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXt8KnizOovbQyvp8VjTqyjsDAQLH-B6Jv5gbEpbU717t87UvkWblndT0rJXd9f7eS6NBTILYLLzrsEDPLvOcvMYgWkw9T7ASF5guaZrRzsDauPKgnPDihYuyVdsOiieOZM--qXe5sQ7wg-p_ZEvLHl73BYmyA/api/js?anon=true',
+            false, false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        setTimeout(function() {
+            var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+            gsites.Xhr.send('https://gamemasterplc-archive.naylahanegan.com/_/tz', null, null, 'GET', null, null, {
+                afjstz: fingerprint
+            });
+        }, 500);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml">
+        window.onload = function() {
+            if (false) {
+                JOT_setMobilePreview();
+            }
+            var loadTimer = window.jstiming.load;
+            loadTimer.tick("ol");
+            loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+            window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+        }
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+            webspace, "en");
+        maestroRunner.initListeners();
+        maestroRunner.installEditRender();
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        //<![CDATA[
+        // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+        if (webspace.user.hasWriteAccess) {
+            JOT_decorateButtons();
+        }
+
+        // Fires delayed events.
+        (function() {
+            JOT_fullyLoaded = true;
+            var delayedEvents = JOT_delayedEvents;
+            for (var x = 0; x < delayedEvents.length; x++) {
+                var event = delayedEvents[x];
+                JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+            }
+            JOT_delayedEvents = null;
+            JOT_postEvent('pageLoaded');
+        })();
+        //]]>
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_postEvent('decorateGvizCharts');
+    </script>
+    <script type="text/javascript">
+        JOT_setupPostRenderingManager();
+    </script>
+    <script type="text/javascript">
+        JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+    </script>
+    <script type="text/javascript">
+        sites.codeembed.init();
+    </script>
+    <div id="server-timer-div" style="display:none"> </div>
+    <script type="text/javascript">
+        window.jstiming.load.tick('render');
+        JOT_postEvent('usercontentrendered', this);
+    </script>
+</body>
+
+</html>
